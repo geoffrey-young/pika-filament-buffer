@@ -33,6 +33,7 @@ honestly, I'm surprised it actually works.
   * [other stuff](#other-stuff)
 - [pictures](#pictures)
 - [credits](#credits)
+- [other options](#other-options)
 
 ---
 
@@ -142,11 +143,15 @@ a magnetic bowden "bridge" (plus some springs) keeps my bowden tubes straight, c
 
 some reference photos
 
-| | | |
+| artie | | |
 | :--- | :--- | :--- |
 | [![buffer](./images/buffer-thumb.jpg)](./images/buffer.jpg) | [![buffer wheel](./images/buffer-wheel-1-thumb.jpg)](./images/buffer-wheel-1.jpg) | [![buffer 2](./images/buffer-2-thumb.jpg)](./images/buffer-2.jpg) |
-| [![movie](./images/ercf_buffer-thumb.jpg)](./images/ercf_buffer.mov) | [![buffer wheel 2](./images/buffer-wheel-2-thumb.jpg)](./images/buffer-wheel-2.jpg) | [![path](./images/path-thumb.jpg)](./images/path.jpg) |
+| [![movie](./images/ercf_buffer-thumb.jpg)](https://discord.com/channels/460117602945990666/708772910956937336/1038298353324273754) | [![buffer wheel 2](./images/buffer-wheel-2-thumb.jpg)](./images/buffer-wheel-2.jpg) | [![path](./images/path-thumb.jpg)](./images/path.jpg) |
 | [![artie](./images/artie-thumb.jpg)](./images/artie.jpg) | [![artie 2](./images/artie-2-thumb.jpg)](./images/artie-2.jpg) | |
+
+| other users on discord| | |
+| :--- | :--- | :--- |
+| [![ningj-1](./images/ningj-1-thumb.png)](./images/ningj-1.png) | [![ningj-2](./images/ningj-2-thumb.png)](./images/ningj-2.png) | |
 
 
 ## credits
@@ -164,3 +169,11 @@ some reference photos
   - `@ningj V2.2726`
 
 - probably others - if you feel left out let me know :)
+
+
+## other options
+
+some other proven buffers that may suit your needs:
+
+- [carrot quiver](https://github.com/SkiBikePrint/ERCF_Mods/tree/main/Carrot_Quiver_Buffer)
+- [ercf buffer array](https://github.com/EtteGit/EnragedRabbitProject/tree/main/usermods/ERCF-Buffer-Array)
