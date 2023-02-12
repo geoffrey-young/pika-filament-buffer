@@ -101,7 +101,7 @@ latches and bottom bracket, which are easy for me to modify (and for you to prin
 | [`array-back.stl`](stl/array-back.stl)                         | back of the array                                 | m3x8              |
 | [`array-latch-9a.stl`](stl/array-latch-9a.stl)                 | side latch ([6](stl/array-latch-6a.stl) and [12](stl/array-latch-12a.stl) stls also provided)          | m3x8              |
 | [`array-latch-9b.stl`](stl/array-latch-9b.stl)                 | side latch ([6](stl/array-latch-6b.stl) and [12](stl/array-latch-12b.stl) stls also provided)          | m3x8              |
-| [`array-bottom-bracket-9.stl`](stl/array-bottom-bracket-9.stl) | bottom bracket ([6](stl/array-bottom-bracket-9.stl) and [12](stl/array-bottom-bracket-12.stl) stls also provided)      | m3x8              |
+| [`array-bottom-bracket-9.stl`](stl/array-bottom-bracket-9.stl) | bottom bracket ([6](stl/array-bottom-bracket-6.stl) and [12](stl/array-bottom-bracket-12.stl) stls also provided)      | m3x8              |
 
 
 ### buffer segments
