@@ -1,8 +1,8 @@
 # yet another buffer array...
 
-| | |
-| :---: | :---: |
-| ![buffer](./images/buffer.jpg) | ![buffer out](./images/buffer-out.jpg) |
+| | | |
+| :---: | :---: | :---: |
+| ![buffer](./images/buffer.jpg) | ![buffer out](./images/buffer-out.jpg) | ![artie](./images/artie-square.jpg) |
 
 
 ## why?
@@ -149,9 +149,10 @@ some reference photos
 | [![movie](./images/ercf_buffer-thumb.jpg)](https://discord.com/channels/460117602945990666/708772910956937336/1038298353324273754) | [![buffer wheel 2](./images/buffer-wheel-2-thumb.jpg)](./images/buffer-wheel-2.jpg) | [![path](./images/path-thumb.jpg)](./images/path.jpg) |
 | [![artie](./images/artie-thumb.jpg)](./images/artie.jpg) | [![artie 2](./images/artie-2-thumb.jpg)](./images/artie-2.jpg) | |
 
-| other users on discord| | |
-| :--- | :--- | :--- |
-| [![ningj-1](./images/ningj-1-thumb.png)](./images/ningj-1.png) | [![ningj-2](./images/ningj-2-thumb.png)](./images/ningj-2.png) | |
+| other users on discord| |
+| :--- | :--- |
+| [![ningj-1](./images/ningj-1-thumb.png)](./images/ningj-1.png) | [![ningj-2](./images/ningj-2-thumb.png)](./images/ningj-2.png) |
+| [![campapalooza-1](./images/campapalooza-1-thumb.jpg)](./images/campapalooza-1.jpg) | [![i_forget-1](./images/i_forget-1-thumb.jpg)](./images/i_forget-1.jpg) |
 
 
 ## credits
