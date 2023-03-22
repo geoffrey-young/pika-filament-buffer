@@ -25,7 +25,7 @@ honestly, I'm surprised it actually worked... but it really does, and my experie
 ## what's here
 
 - [assembly](#assembly)
-  * [BOM](#BOM)
+  * [BOM](#bom)
   * [printing](#printing)
   * [array](#array)
   * [buffer segments](#buffer-segments)
@@ -37,8 +37,9 @@ honestly, I'm surprised it actually worked... but it really does, and my experie
 
 ---
 
-
 ## assembly
+
+sorry there's no manual for assembly or operation - I wish I had both the time and ability to pull those glossy things together.
 
 hopefully, y'all find this pretty self explanatory, and can figure it out from the pictures.  basically, we have:
 
@@ -47,17 +48,23 @@ hopefully, y'all find this pretty self explanatory, and can figure it out from t
 
 that's about it.
 
+the good news is that there's pretty much only one way the parts can go together, and everyone so far has found it pretty straightforward.  feel free to ping me on the [voron discord](https://discord.com/channels/460117602945990666/869236671554682990) in [`#ercf_questions`](https://discord.com/channels/460117602945990666/909743915475816458) if you have issues.
+
+there's a video of the buffer in action on discord, which is worth a look.  the number of people who haven't figured out the spin-the-wheel-with-your-finger method is significantly higher than I would have imagined.  check it out here:
+- https://discord.com/channels/460117602945990666/708772910956937336/1038298353324273754
+
 
 ### printing
 
 a few things to note when printing...
 
-- the models already oriented for optimal printing.  no parts have included supports to remove, nor are supports necessary for any part.  if there are overhangs that need support the part is oriented incorrectly.
-- due to bending of large parts, you want to print the bottoms flat so that the latch fit is tight - you'll only be able to print 1 or two of these at a time.
-- conversely, the tops are designed to be printed upright, so go ahead and fill your plate.  if you care about a good looking bottom overhang, keep your exterior perimeter fans at 100% and engage them starting on layer 2.
-- I used 20% infill and .2mm layer height on the tops and bottoms in order to keep parts light and plastic use down.
+- **the models already oriented for optimal printing**.  no parts have included supports to remove, nor are supports necessary for any part.  if there are overhangs that need support the part is oriented incorrectly.
+- due to bending of large parts, you want to **print the bottoms flat so that the latch fit is tight** - you'll only be able to print 1 or two of these at a time.
+- conversely, **the tops are designed to be printed upright**, so go ahead and fill your plate.  if you care about a good looking bottom overhang, keep your exterior perimeter fans at 100% and engage them starting on layer 2.
+- I used 20% infill and .2mm layer height on the tops and bottoms in order to keep parts light and plastic use down.  **ymmv**.
 - I would suggest printing the latches and bracket using standard voron parameters (40% infill, .2mm layers, 4 perimeters) for added strength.
 - the screen with the posts works best with higher temps and lower fan to keep the layers as strong as possible, as the posts are thin and subject to cracking if you're not careful.
+- consider using setting `only_one_perimeter_first_layer` to `true` for the screens, which helps the first layer be a little more sane.  well, in superslicer, anyway.
 
 
 ### BOM
