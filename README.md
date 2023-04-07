@@ -24,18 +24,18 @@ honestly, I'm surprised it actually worked... but it really does, and my experie
 
 ## what's here
 
-- [assembly](#assembly)
-  * [manual](#manual)
-  * [printing](#printing)
-  * [BOM](#bom)
-  * [array](#array)
-  * [buffer segments](#buffer-segments)
-  * [tag plates](#tag-plates)
-- [operation](#operation)
-- [other stuff](#other-stuff)
-- [pictures](#pictures)
-- [credits](#credits)
-- [other options](#other-options)
+* [assembly](#assembly)
+  + [manual](#manual)
+  + [printing](#printing)
+  + [BOM](#bom)
+  + [array](#array)
+  + [buffer segments](#buffer-segments)
+  + [tag plates](#tag-plates)
+* [operation](#operation)
+* [other stuff](#other-stuff)
+* [pictures](#pictures)
+* [credits](#credits)
+* [other options](#other-options)
 
 ---
 
@@ -67,7 +67,7 @@ a few things to note when printing...
 - conversely, **the tops are designed to be printed upright**, so go ahead and fill your plate.  if you care about a good looking bottom overhang, keep your exterior perimeter fans at 100% and engage them starting on layer 2.
 - I used 20% infill and .2mm layer height on the tops and bottoms in order to keep parts light and plastic use down.  **ymmv**.
 - I would suggest printing the latches and bracket using standard voron parameters (40% infill, .2mm layers, 4 perimeters) for added strength.
-- the screen with the posts works best with higher temps and lower fan to keep the layers as strong as possible, as the posts are thin and subject to cracking if you're not careful.
+- the screen with the posts works best with higher temps and lower fan to keep the layers as strong as possible.  early versions had thinner posts, but the current version is a bit more rigid and should be less problematic.
 - consider using setting `only_one_perimeter_first_layer` to `true` for the screens, which helps the first layer be a little more sane.  well, in superslicer, anyway.
 
 
@@ -82,21 +82,32 @@ hopefully this is a full, accurate list...
 | m3x12                                              | 6            | 9            | 12            |
 | m3 nut                                             | 6            | 9            | 12            |
 | m3 heatset                                         | 18           | 27           | 36            |
-| m2x8 self tapping                                  | 42           | 63           | 84            |
+| [m2x8 self tapping](#handy-screws)                                  | 42           | 63           | 84            |
 | 608 bearing                                        | 6            | 9            | 12            |
 | ecas connector                                     | 12           | 18           | 24            |
-| disc magnet (optional, depending on configuration) | 12           | 18           | 24            |
+| [disc magnet](#a-note-on-magnets) (optional, depending on configuration) | 12           | 18           | 24            |
 | PTFE/FEP 4mm OD x (2.5mm or 3.0mm ID) tubing       | variable     | variable     | variable      |
 
 plus mounting hardware if you want to use the bottom bracket to mount the array on something.
 
-m3x6 can be substituted for all the m3x8 with no detrimental effect - the holes are long enough for both.
+the majority of the hardware is common across voron builds, so folks will likely have it just sitting around.  the big exception being the hole magnets...
+
+#### a note on magnets...
+
+I used these 10x3 disc magnets [from amazon](https://www.amazon.com/dp/B09ZLFNZ4S).  if those aren't available in your country, you're looking for 10x3 disc magnets with a 3mm hole in the middle, like these:
+
+![magnets](./images/magnets.png)
+
+magnets with 4mm holes are a little better, but outside of the very first set I ordered I haven't been able to find any.
+
+**just a small wrinkle...** as with 6x3 round magnets, the majority of "10x3" hole magnets in the wild are really around 9.5mm in diameter, so the parts are designed against this width.  if you have real 10mm magnets they'll be too large.  solution coming soon™
 
 
-| | |
-| :--- | :---: |
-| I used these 10x3 disc magnets [from amazon](https://www.amazon.com/dp/B09ZLFNZ4S), which don't seem to be available on amazon anymore.  you're looking for something like [this](https://www.amazon.com/dp/B07G88NZZV) - 10x3 disc magnets with a hole in the middle. | ![magnets](./images/magnets.png) |
-| these m2x8 hex cap self threading screws [from amazon](https://www.amazon.com/gp/product/B00YBMRAH4) are really handy, both for this and other voron projects, like klicky. | ![screws](./images/screws.png) |
+#### handy screws
+
+these m2x8 hex cap self threading screws [from amazon](https://www.amazon.com/gp/product/B00YBMRAH4) are really handy, both for this and other voron projects, like klicky.  m2x10 will also work in current buffer versions if those are easier to find.  
+
+![screws](./images/screws.png)
 
 
 
@@ -125,15 +136,16 @@ two top options are provided: choose either the one with two ecas connectors, or
 | :---                                                               | :---                                                          | :---                |
 | [`buffer-bottom.stl`](stl/buffer-bottom.stl)                       | segment bottom                                                | m3 heatset          |
 | [`buffer-top-ecas+ecas.stl`](stl/buffer-top-ecas+ecas.stl)         | segment top, both sides ecas connector                        | ecas                |
-| [`buffer-top-ecas+magnet.stl`](stl/buffer-top-ecas+magnet.stl)     | segment top, one side ecas and one side disc magnet connector | ecas, disc magnet   |
-| [`buffer-bowden-magnet-end.stl`](stl/buffer-bowden-magnet-end.stl) | if you use the ecas+magnet top                                | ecas, disc magnet   |
+| [`buffer-top-ecas+magnet.stl`](stl/buffer-top-ecas+magnet.stl)     | segment top, one side ecas and one side disc magnet connector | ecas, [disc magnet](#a-note-on-magnets)   |
+| [`buffer-top-magnet+magnet.stl`](stl/buffer-top-magnet+magnet.stl) | segment top, both sides disc magnet connector                 | [disc magnet](#a-note-on-magnets)         |
+| [`buffer-bowden-magnet-end.stl`](stl/buffer-bowden-magnet-end.stl) | if you use either of the magnet tops                          | ecas, [disc magnet](#a-note-on-magnets)   |
 | [`buffer-screen-a.stl`](stl/buffer-screen-a.stl)                   | segment screen for wheel                                      | m3x8 flat head      |
 | [`buffer-screen-b.stl`](stl/buffer-screen-b.stl)                   | segment top screen                                            | m2x8 self-threading |
 | [`buffer-bearing-insert.stl`](stl/buffer-bearing-insert.stl)       | holds the wheel in place                                      | m3x12, m3 nut       |
 | [`buffer-handle.stl`](stl/buffer-handle.stl)                       | segment handle                                                | m3x8                |
 | [`buffer-wheel.stl`](stl/buffer-wheel.stl)                         | wheel                                                         | 608 bearing         |
 
-the wheel is same as the ercp wheel, except with a filament hole (with marker) for easier loading.  feel free to use the stock ercp wheel instead.
+the wheel is same as the ercp wheel, except with a filament hole (with marker) for easier loading.  feel free to use the stock ercp wheel instead if you have some sitting around.
 
 
 ### tag plates
@@ -167,7 +179,7 @@ a magnetic bowden "bridge" (plus some springs) keeps my bowden tubes straight, c
 
 some reference photos, videos, etc
 
-| artie - `v2.1650` | | |
+| artie `v2.1650` | | |
 | :--- | :--- | :--- |
 | [![buffer](./images/buffer-thumb.jpg)](./images/buffer.jpg) | [![buffer wheel](./images/buffer-wheel-1-thumb.jpg)](./images/buffer-wheel-1.jpg) | [![buffer 2](./images/buffer-2-thumb.jpg)](./images/buffer-2.jpg) |
 | [![movie](./images/ercf_buffer-thumb.jpg)](https://discord.com/channels/460117602945990666/708772910956937336/1038298353324273754) | [![buffer wheel 2](./images/buffer-wheel-2-thumb.jpg)](./images/buffer-wheel-2.jpg) | [![path](./images/path-thumb.jpg)](./images/path.jpg) |
