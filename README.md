@@ -82,7 +82,7 @@ hopefully this is a full, accurate list...
 | m3x12                                              | 6            | 9            | 12            |
 | m3 nut                                             | 6            | 9            | 12            |
 | m3 heatset                                         | 18           | 27           | 36            |
-| [m2x8 self tapping](#handy-screws)                                  | 42           | 63           | 84            |
+| [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws)                                  | 42           | 63           | 84            |
 | 608 bearing                                        | 6            | 9            | 12            |
 | ecas connector                                     | 12           | 18           | 24            |
 | [disc magnet](#a-note-on-magnets) (optional, depending on configuration) | 12           | 18           | 24            |
@@ -90,24 +90,28 @@ hopefully this is a full, accurate list...
 
 plus mounting hardware if you want to use the bottom bracket to mount the array on something.
 
-the majority of the hardware is common across voron builds, so folks will likely have it just sitting around.  the big exception being the hole magnets...
+the majority of the hardware was selected due to it being common across voron builds, so folks will likely have it just sitting around.  the big exception being the hole magnets...
 
 #### a note on magnets...
 
 I used these 10x3 disc magnets [from amazon](https://www.amazon.com/dp/B09ZLFNZ4S).  if those aren't available in your country, you're looking for 10x3 disc magnets with a 3mm hole in the middle, like these:
 
-![magnets](./images/magnets.png)
+[![magnets](./images/magnets-thumb.png)](./images/magnets.png)
 
 magnets with 4mm holes are a little better, but outside of the very first set I ordered I haven't been able to find any.
 
-**just a small wrinkle...** as with 6x3 round magnets, the majority of "10x3" hole magnets in the wild are really around 9.5mm in diameter, so the parts are designed against this width.  if you have real 10mm magnets they'll be too large.  solution coming soon™
+**just a small wrinkle...** as with the 6x3mm magnets for the ercf, the majority of "10x3mm" hole magnets in the wild are really around 9.5mm in diameter.  as such, the buffer parts are designed against this width.
+
+[![magnet-lies-2](./images/magnet-lies-2-thumb.png)](./images/magnet-lies-2.png) [![magnet-lies](./images/magnet-lies-thumb.png)](./images/magnet-lies.png)
+
+if you have real 10mm magnets they'll be too large and you'll want to keep looking.  or maybe lightly sand the plastic, depending on how much room your magnets need.  solution coming soon™
 
 
-#### handy screws
+#### m2x8 hex cap self threading screws
 
 these m2x8 hex cap self threading screws [from amazon](https://www.amazon.com/gp/product/B00YBMRAH4) are really handy, both for this and other voron projects, like klicky.  m2x10 will also work in current buffer versions if those are easier to find.  
 
-![screws](./images/screws.png)
+[![screws](./images/screws-thumb.png)](./images/screws.png)
 
 
 
@@ -140,7 +144,7 @@ two top options are provided: choose either the one with two ecas connectors, or
 | [`buffer-top-magnet+magnet.stl`](stl/buffer-top-magnet+magnet.stl) | segment top, both sides disc magnet connector                 | [disc magnet](#a-note-on-magnets)         |
 | [`buffer-bowden-magnet-end.stl`](stl/buffer-bowden-magnet-end.stl) | if you use either of the magnet tops                          | ecas, [disc magnet](#a-note-on-magnets)   |
 | [`buffer-screen-a.stl`](stl/buffer-screen-a.stl)                   | segment screen for wheel                                      | m3x8 flat head      |
-| [`buffer-screen-b.stl`](stl/buffer-screen-b.stl)                   | segment top screen                                            | m2x8 self-threading |
+| [`buffer-screen-b.stl`](stl/buffer-screen-b.stl)                   | segment top screen                                            | m2x8 [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws) |
 | [`buffer-bearing-insert.stl`](stl/buffer-bearing-insert.stl)       | holds the wheel in place                                      | m3x12, m3 nut       |
 | [`buffer-handle.stl`](stl/buffer-handle.stl)                       | segment handle                                                | m3x8                |
 | [`buffer-wheel.stl`](stl/buffer-wheel.stl)                         | wheel                                                         | 608 bearing         |
@@ -155,7 +159,11 @@ if you mount your buffer overhead your numbers will be upside down.  you can fin
 
 ## operation
 
-pictures coming soon.  until then, there's a video of the buffer in action I posted on discord that's worth a look:
+buffer operation made simple...
+
+[![operation-feed-thumb.png](./images/operation-feed-thumb.png)](./images/operation-feed.png)  [![operation-anchor-thumb.png](./images/operation-anchor-thumb.png)](./images/operation-anchor.png)  [![operation-spin-thumb.png](./images/operation-spin-thumb.png)](./images/operation-spin.png)  [![operation-pull-thumb.png](./images/operation-pull-thumb.png)](./images/operation-pull.png)
+
+there's also a video of the buffer in action I posted on discord that's worth a look:
 
 - https://discord.com/channels/460117602945990666/708772910956937336/1038298353324273754
 
