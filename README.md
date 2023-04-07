@@ -141,7 +141,7 @@ two top options are provided: choose either the one with two ecas connectors, or
 | [`buffer-bottom.stl`](stl/buffer-bottom.stl)                       | segment bottom                                                | m3 heatset          |
 | [`buffer-top-ecas+ecas.stl`](stl/buffer-top-ecas+ecas.stl)         | segment top, both sides ecas connector                        | ecas                |
 | [`buffer-top-ecas+magnet.stl`](stl/buffer-top-ecas+magnet.stl)     | segment top, one side ecas and one side disc magnet connector | ecas, [disc magnet](#a-note-on-magnets)   |
-| [`buffer-top-magnet+magnet.stl`](stl/buffer-top-magnet+magnet.stl) | segment top, both sides disc magnet connector                 | [disc magnet](#a-note-on-magnets)         |
+| [`buffer-top-magnet+magnet.stl`](stl/buffer-top-magnet+magnet.stl) | segment top, both sides disc magnet connector                 | ecas, [disc magnet](#a-note-on-magnets)         |
 | [`buffer-bowden-magnet-end.stl`](stl/buffer-bowden-magnet-end.stl) | if you use either of the magnet tops                          | ecas, [disc magnet](#a-note-on-magnets)   |
 | [`buffer-screen-a.stl`](stl/buffer-screen-a.stl)                   | segment screen for wheel                                      | m3x8 flat head      |
 | [`buffer-screen-b.stl`](stl/buffer-screen-b.stl)                   | segment top screen                                            | m2x8 [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws) |
