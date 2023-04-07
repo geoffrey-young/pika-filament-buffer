@@ -25,12 +25,14 @@ honestly, I'm surprised it actually worked... but it really does, and my experie
 ## what's here
 
 - [assembly](#assembly)
-  * [BOM](#bom)
+  * [manual](#manual)
   * [printing](#printing)
+  * [BOM](#bom)
   * [array](#array)
   * [buffer segments](#buffer-segments)
   * [tag plates](#tag-plates)
-  * [other stuff](#other-stuff)
+- [operation](#operation)
+- [other stuff](#other-stuff)
 - [pictures](#pictures)
 - [credits](#credits)
 - [other options](#other-options)
@@ -39,8 +41,6 @@ honestly, I'm surprised it actually worked... but it really does, and my experie
 
 ## assembly
 
-sorry there's no manual for assembly or operation - I wish I had both the time and ability to pull those glossy things together.
-
 hopefully, y'all find this pretty self explanatory, and can figure it out from the pictures.  basically, we have:
 
 - a series of buffer slot slider thingies
@@ -48,10 +48,14 @@ hopefully, y'all find this pretty self explanatory, and can figure it out from t
 
 that's about it.
 
-the good news is that there's pretty much only one way the parts can go together, and everyone so far has found it pretty straightforward.  feel free to ping me on the [voron discord](https://discord.com/channels/460117602945990666/869236671554682990) in [`#ercf_questions`](https://discord.com/channels/460117602945990666/909743915475816458) if you have issues.
+the good news is that there's pretty much only one way the parts can go together, and everyone so far has found it pretty straightforward.  and in late breaking news, there's even [a manual](./assembly-manual.pdf)!
 
-there's a video of the buffer in action on discord, which is worth a look.  the number of people who haven't figured out the spin-the-wheel-with-your-finger method is significantly higher than I would have imagined.  check it out here:
-- https://discord.com/channels/460117602945990666/708772910956937336/1038298353324273754
+feel free to ping me on the [voron discord](https://discord.com/channels/460117602945990666/869236671554682990) in [`#ercf_questions`](https://discord.com/channels/460117602945990666/909743915475816458) if you have issues.  
+
+
+### manual
+
+and now... [a manual](./assembly-manual.pdf)
 
 
 ### printing
@@ -137,7 +141,16 @@ the wheel is same as the ercp wheel, except with a filament hole (with marker) f
 if you mount your buffer overhead your numbers will be upside down.  you can find upside down tag plates [here](https://github.com/geoffrey-young/3D-Printing/tree/main/models/voron/ercf/upside-down-numbers).
 
 
-### other stuff
+## operation
+
+pictures coming soon.  until then, there's a video of the buffer in action on discord, which is worth a look:
+
+- https://discord.com/channels/460117602945990666/708772910956937336/1038298353324273754
+
+the number of people who haven't figured out the spin-the-wheel-with-your-finger method is significantly higher than I would have imagined.
+
+
+## other stuff
 
 I mounted my ercf at 90 degrees using a french cleat system, which you can find [here](https://github.com/geoffrey-young/3D-Printing/tree/main/models/voron/ercf/mounts/ercf-french-cleat).
 
@@ -150,7 +163,7 @@ a magnetic bowden "bridge" (plus some springs) keeps my bowden tubes straight, c
 
 some reference photos
 
-| artie | | |
+| artie - `v2.1650` | | |
 | :--- | :--- | :--- |
 | [![buffer](./images/buffer-thumb.jpg)](./images/buffer.jpg) | [![buffer wheel](./images/buffer-wheel-1-thumb.jpg)](./images/buffer-wheel-1.jpg) | [![buffer 2](./images/buffer-2-thumb.jpg)](./images/buffer-2.jpg) |
 | [![movie](./images/ercf_buffer-thumb.jpg)](https://discord.com/channels/460117602945990666/708772910956937336/1038298353324273754) | [![buffer wheel 2](./images/buffer-wheel-2-thumb.jpg)](./images/buffer-wheel-2.jpg) | [![path](./images/path-thumb.jpg)](./images/path.jpg) |
@@ -160,6 +173,8 @@ some reference photos
 | :--- | :--- |
 | [![ningj-1](./images/ningj-1-thumb.png)](./images/ningj-1.png) | [![ningj-2](./images/ningj-2-thumb.png)](./images/ningj-2.png) |
 | [![campapalooza-1](./images/campapalooza-1-thumb.jpg)](./images/campapalooza-1.jpg) | [![i_forget-1](./images/i_forget-1-thumb.jpg)](./images/i_forget-1.jpg) |
+
+pull requests with your (single) picture added most welcome.
 
 
 ## credits
