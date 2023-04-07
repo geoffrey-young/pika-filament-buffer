@@ -143,11 +143,15 @@ if you mount your buffer overhead your numbers will be upside down.  you can fin
 
 ## operation
 
-pictures coming soon.  until then, there's a video of the buffer in action on discord, which is worth a look:
+pictures coming soon.  until then, there's a video of the buffer in action I posted on discord that's worth a look:
 
 - https://discord.com/channels/460117602945990666/708772910956937336/1038298353324273754
 
 the number of people who haven't figured out the spin-the-wheel-with-your-finger method is significantly higher than I would have imagined.
+
+"but how fast and easy is it to load... really?" I hear you cry.  allow satisfied discord user `@ningj V2.2726` to show you:
+
+- https://discord.com/channels/460117602945990666/909743915475816458/1089361904650162266
 
 
 ## other stuff
