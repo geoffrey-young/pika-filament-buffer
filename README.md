@@ -163,6 +163,8 @@ buffer operation made simple...
 
 [![operation-feed-thumb.png](./images/operation-feed-thumb.png)](./images/operation-feed.png)  [![operation-anchor-thumb.png](./images/operation-anchor-thumb.png)](./images/operation-anchor.png)  [![operation-spin-thumb.png](./images/operation-spin-thumb.png)](./images/operation-spin.png)  [![operation-pull-thumb.png](./images/operation-pull-thumb.png)](./images/operation-pull.png)
 
+my setup is currently `ercf_calib_ref = 1146.4` and I use 5 loops/finger swoops.  ymmv.
+
 there's also a video of the buffer in action I posted on discord that's worth a look:
 
 - https://discord.com/channels/460117602945990666/708772910956937336/1038298353324273754
