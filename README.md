@@ -195,12 +195,12 @@ some reference photos, videos, etc
 | [![movie](./images/ercf_buffer-thumb.jpg)](https://discord.com/channels/460117602945990666/708772910956937336/1038298353324273754) | [![buffer wheel 2](./images/buffer-wheel-2-thumb.jpg)](./images/buffer-wheel-2.jpg) | [![path](./images/path-thumb.jpg)](./images/path.jpg) |
 | [![artie](./images/artie-thumb.jpg)](./images/artie.jpg) | [![artie 2](./images/artie-2-thumb.jpg)](./images/artie-2.jpg) | [![assembly manual](./images/assembly-manual.png)](./assembly-manual.pdf) |
 
-| other users on discord| |
-| :--- | :--- |
-| [![ningj-1](./images/ningj-1-thumb.png)](./images/ningj-1.png) | [![ningj-2](./images/ningj-2-thumb.png)](./images/ningj-2.png) |
-| [![campapalooza-1](./images/campapalooza-1-thumb.jpg)](./images/campapalooza-1.jpg) | [![i_forget-1](./images/i_forget-1-thumb.jpg)](./images/i_forget-1.jpg) |
+| other users on discord | | |
+| :--- | :--- | :--- |
+| [![ningj-1](./images/user/ningj.png)](./images/user/ningj.png) | [![campapalooza-1](./images/user/campapalooza.jpg)](./images/user/campapalooza.jpg) | [![user-1](./images/user/user-1.png)](./images/user/user-1.png) |
+| [![user-2](./images/user/user-2.jpg)](./images/user/user-2.jpg) | [![user-3](./images/user/user-3.jpg)](./images/user/user-3.jpg) | |
 
-pull requests with your (single) picture added most welcome.
+pull requests with your (single 500x500px) picture added to `images/user/` most welcome.
 
 
 ## credits
