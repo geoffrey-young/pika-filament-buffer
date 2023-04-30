@@ -1,9 +1,15 @@
 # piKa - a multimaterial filament buffer solution
 
+
+![piKa](./images/piKa-2.png) 
+
+---
+
 | | | |
 | :---: | :---: | :---: |
 | ![buffer](./images/buffer.jpg) | ![buffer out](./images/buffer-out.jpg) | ![artie](./images/artie-square.jpg) |
 
+---
 
 ## why?
 
