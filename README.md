@@ -41,7 +41,10 @@ a [buffer](https://en.wikipedia.org/wiki/Buffer_solution) is a solution specific
 
 three members make up the order [Lagomorpha](https://en.wikipedia.org/wiki/Lagomorpha): rabbits, hares… and pikas
 
-![american pika](./images/american_pika.jpg)
+[![american pika](./images/american_pika.jpg)](https://www.nwf.org/Educational-Resources/Wildlife-Guide/Mammals/American-Pika)
+[![american pika](./images/american_pika-2.jpg)](https://www.biographic.com/dine-and-dash/)
+
+pretty cool little creatures, worth getting to know.
 
 
 ### ***in multimaterial 3d printing...***
@@ -50,7 +53,7 @@ we have a [rabbit](https://github.com/EtteGit/EnragedRabbitProject), and a [hare
 
 ![piKa](./images/piKa-1.png)
 
-buffers, solutions, p*Ka*... it all just seemed to come together for a recovering chemist when looking for a name.
+buffers, solutions, p*Ka*... it all just seemed to come together for a recovering chemist.
 
 
 ## what's here
