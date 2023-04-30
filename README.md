@@ -1,9 +1,15 @@
-# yet another buffer array...
+# piKa - a multimaterial filament buffer solution
+
+
+![piKa](./images/piKa-2.png) 
+
+---
 
 | | | |
 | :---: | :---: | :---: |
 | ![buffer](./images/buffer.jpg) | ![buffer out](./images/buffer-out.jpg) | ![artie](./images/artie-square.jpg) |
 
+---
 
 ## why?
 
@@ -20,6 +26,34 @@ all I wanted was a lightning-fast, super-simple, overhead-mounted, expletive-fre
 this thing here is where I ended up.
 
 honestly, I'm surprised it actually worked... but it really does, and my experience has been frustration free ever since.  others on discord seem to have similarly joyful experiences with it as well, so I guess I'm on to something.
+
+
+## piKa ?
+
+### ***in chemistry...***
+
+a [buffer](https://en.wikipedia.org/wiki/Buffer_solution) is a solution specifically designed to be resistant to changes in pH, allowing a reaction to continue in balance even when ideal conditions are threatened.  the most effective buffers  - those with the greatest capacity to absorb change - are created using an acid whose **p**___Ka___ (acid dissociation constant) is equal to the desired pH.  choosing an acid with the wrong **p**___Ka___ can mean disaster.
+
+**p**___Ka___ is crucial to buffer efficacy
+
+
+### ***in taxonomy...***
+
+three members make up the order [Lagomorpha](https://en.wikipedia.org/wiki/Lagomorpha): rabbits, hares… and pikas
+
+[![american pika](./images/american_pika.jpg)](https://www.nwf.org/Educational-Resources/Wildlife-Guide/Mammals/American-Pika)
+[![american pika](./images/american_pika-2.jpg)](https://www.biographic.com/dine-and-dash/)
+
+pretty cool little creatures, worth getting to know.
+
+
+### ***in multimaterial 3d printing...***
+
+we have a [rabbit](https://github.com/EtteGit/EnragedRabbitProject), and a [hare](https://github.com/moggieuk/ERCF-Software-V3), and now... a pika
+
+![piKa](./images/piKa-1.png)
+
+buffers, solutions, p*Ka*... it all just seemed to come together for a recovering chemist.
 
 
 ## what's here
@@ -41,14 +75,14 @@ honestly, I'm surprised it actually worked... but it really does, and my experie
 
 ## assembly
 
-hopefully, y'all find this pretty self explanatory, and can figure it out from the pictures.  basically, we have:
+hopefully, y'all find this self explanatory, and can figure it out from the pictures.  basically, we have:
 
 - a series of buffer slot slider thingies
 - held together by a frame
 
 that's about it.
 
-the good news is that there's pretty much only one way the parts can go together, and everyone so far has found it pretty straightforward.  and in late breaking news, there's even [a manual](./assembly-manual.pdf)!
+the good news is that there's only one way the parts can really go together, and everyone so far has found it relatively straightforward.  and in late breaking news, there's even [a manual](./assembly-manual.pdf)!
 
 feel free to ping me on the [voron discord](https://discord.com/channels/460117602945990666/869236671554682990) in [`#ercf_questions`](https://discord.com/channels/460117602945990666/909743915475816458) if you have issues.  
 
@@ -117,8 +151,9 @@ these m2x8 hex cap self threading screws [from amazon](https://www.amazon.com/gp
 
 ### array
 
-currently, there are 6, 9, and 12 slot versions, though only the 9 slot is tested at this point in time.  the only parts that differ are the side
-latches and bottom bracket, which are easy for me to modify (and for you to print) if they don't work - just let me know.
+currently, there are 6, 9, and 12 slot versions.  the only parts that differ depending on the number of slots are the side latches and bottom bracket.
+
+the 9 cart is the most popular, and what I currently run. both the 6 and 12 cart versions have at least one user I've worked through the design with, so I'm confident in the dimentional accuracy. however, if you discover an issue with the sizing just let me know.
 
 | part                                                           | description                                       | required hardware | 
 | :---                                                           | :---                                              | :---              |
@@ -134,7 +169,7 @@ latches and bottom bracket, which are easy for me to modify (and for you to prin
 
 one complete buffer required per cart
 
-two top options are provided: choose either the one with two ecas connectors, or the one with one ecas and one disc magnet.
+three top options are provided: choose either [two ecas connector ends](stl/buffer-top-ecas+ecas.stl), [one ecas end and one disc magnet end](stl/buffer-top-ecas+magnet.stl) (my setup), or [two disc magnet ends](stl/buffer-top-magnet+magnet.stl), whichever is best suited to your setup.
 
 | part                                                               | description                                                   | required hardware   |
 | :---                                                               | :---                                                          | :---                |
@@ -174,6 +209,8 @@ the number of people who haven't figured out the spin-the-wheel-with-your-finger
 "but how fast and easy is it to load... really?" I hear you cry.  allow satisfied discord user `@ningj V2.2726` to show you:
 
 - https://discord.com/channels/460117602945990666/909743915475816458/1089361904650162266
+
+![piKa](./images/piKa-2.png) 
 
 
 ## other stuff
@@ -226,3 +263,4 @@ some other proven buffers that may suit your needs:
 
 - [carrot quiver](https://github.com/SkiBikePrint/ERCF_Mods/tree/main/Carrot_Quiver_Buffer)
 - [ercf buffer array](https://github.com/EtteGit/EnragedRabbitProject/tree/main/usermods/ERCF-Buffer-Array)
+
