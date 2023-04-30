@@ -22,7 +22,7 @@ this thing here is where I ended up.
 honestly, I'm surprised it actually worked... but it really does, and my experience has been frustration free ever since.  others on discord seem to have similarly joyful experiences with it as well, so I guess I'm on to something.
 
 
-## piKa
+## piKa ?
 
 ### ***in chemistry...***
 
