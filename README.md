@@ -114,8 +114,7 @@ hopefully this is a full, accurate list...
 | m3x8                                               | 38           | 53           | 68            |
 | m3x8 flat head                                     | 12           | 18           | 24            |
 | m3x12                                              | 6            | 9            | 12            |
-| m3 nut                                             | 6            | 9            | 12            |
-| m3 heatset                                         | 18           | 27           | 36            |
+| m3 heatset                                         | 24           | 36           | 48            |
 | [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws)                                  | 42           | 63           | 84            |
 | 608 bearing                                        | 6            | 9            | 12            |
 | ecas connector                                     | 12           | 18           | 24            |
@@ -253,6 +252,8 @@ pull requests with your (single 500x500px) picture added to `images/user/` most 
 - I'm super grateful for some early beta testers, who provided really valuable feedback:
   - `@TheTechRunner V2.1453 V0.1556`
   - `@ningj V2.2726`
+
+- M3 heatsets replacing M3 nuts by [BRueter](https://github.com/brueter/)
 
 - probably others - if you feel left out let me know :)
 
