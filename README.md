@@ -11,51 +11,6 @@
 
 ---
 
-## why?
-
-filament buffers are hard™
-
-I didn't realize how hard until I ventured down this path.
-
-I started like most do, and loyally printed some [ercf carrot patch](https://github.com/EtteGit/EnragedRabbitProject/tree/main/Carrot_Patch) units.  space limitations required me to mount them overhead, which is where things started to go sideways - every time I needed to put in new filament I had to find a chair and fsck around with the confined carrot patch space, sharp edges, filament whiplash, and whatnot - all overhead - until my shoulders hurt, cursing the entire time.  I figured there had to be a better way...  
-
-it turns out, there really isn't.  yes, there's the nifty [buffer array usermod](https://github.com/EtteGit/EnragedRabbitProject/tree/main/usermods/ERCF-Buffer-Array), which saves on space but doesn't remove what turned out to be my main source of frustration - not having direct access to the wheel.  this alone generated so much yelling the neighbors started to complain.  beyond the carrot patch and its variants, remaining alternative solutions seemed to end in a single slot *hey lets shove the filament in this little space* approach.  given my 1200mm bowden path, those weren't poised to work out well unless I made them half a mile long.
-
-all I wanted was a lightning-fast, super-simple, overhead-mounted, expletive-free, wheel-based, wicked-dependable filament buffer solution.  how hard could it be?
-
-this thing here is where I ended up.
-
-honestly, I'm surprised it actually worked... but it really does, and my experience has been frustration free ever since.  others on discord seem to have similarly joyful experiences with it as well, so I guess I'm on to something.
-
-
-## piKa ?
-
-### ***in chemistry...***
-
-a [buffer](https://en.wikipedia.org/wiki/Buffer_solution) is a solution specifically designed to be resistant to changes in pH, allowing a reaction to continue in balance even when ideal conditions are threatened.  the most effective buffers  - those with the greatest capacity to absorb change - are created using an acid whose **p**___Ka___ (acid dissociation constant) is equal to the desired pH.  choosing an acid with the wrong **p**___Ka___ can mean disaster.
-
-**p**___Ka___ is crucial to buffer efficacy
-
-
-### ***in taxonomy...***
-
-three members make up the order [Lagomorpha](https://en.wikipedia.org/wiki/Lagomorpha): rabbits, hares… and pikas
-
-[![american pika](./images/american_pika.jpg)](https://www.nwf.org/Educational-Resources/Wildlife-Guide/Mammals/American-Pika)
-[![american pika](./images/american_pika-2.jpg)](https://www.biographic.com/dine-and-dash/)
-
-pretty cool little creatures, worth getting to know.
-
-
-### ***in multimaterial 3d printing...***
-
-we have a [rabbit](https://github.com/EtteGit/EnragedRabbitProject), and a [hare](https://github.com/moggieuk/ERCF-Software-V3), and now... a pika
-
-![piKa](./images/piKa-1.png)
-
-buffers, solutions, p*Ka*... it all just seemed to come together for a recovering chemist.
-
-
 ## what's here
 
 * [assembly](#assembly)
@@ -65,10 +20,13 @@ buffers, solutions, p*Ka*... it all just seemed to come together for a recoverin
   + [array](#array)
   + [buffer segments](#buffer-segments)
   + [tag plates](#tag-plates)
-* [operation](#operation)
 * [other stuff](#other-stuff)
+* [operation](#operation)
 * [pictures](#pictures)
+* [why?](#why-)
+* [piKa?](#pika-)
 * [credits](#credits)
+* [contributing](#contributing)
 * [other options](#other-options)
 
 ---
@@ -103,6 +61,8 @@ a few things to note when printing...
 - I would suggest printing the latches and bracket using standard voron parameters (40% infill, .2mm layers, 4 perimeters) for added strength.
 - the screen with the posts works best with higher temps and lower fan to keep the layers as strong as possible.  early versions had thinner posts, but the current version is a bit more rigid and should be less problematic.
 - consider using setting `only_one_perimeter_first_layer` to `true` for the screens, which helps the first layer be a little more sane.  well, in superslicer, anyway.
+
+I printed mine in ABS, and most people do the same.  PLA should be fine, but ymmv...
 
 
 ### BOM
@@ -192,6 +152,15 @@ the wheel is same as the ercp wheel, except with a filament hole (with marker) f
 if you mount your buffer overhead your numbers will be upside down.  you can find upside down tag plates [here](https://github.com/geoffrey-young/3D-Printing/tree/main/models/voron/ercf/upside-down-numbers).
 
 
+## other stuff
+
+I mounted my ercf at 90 degrees using a french cleat system, which you can find [here](https://github.com/geoffrey-young/3D-Printing/tree/main/models/voron/ercf/mounts/ercf-french-cleat).
+
+the 90 degree mounting created some challenges accessing the filament block ecas connectors, so I made [an extension](https://github.com/geoffrey-young/3D-Printing/tree/main/models/voron/ercf/extender) to help.
+
+a magnetic bowden "bridge" (plus some springs) keeps my bowden tubes straight, clear, and managed.  available [here](https://github.com/geoffrey-young/3D-Printing/tree/main/models/voron/ercf/mounts/bridge).
+
+
 ## operation
 
 buffer operation made simple...
@@ -213,15 +182,6 @@ the number of people who haven't figured out the spin-the-wheel-with-your-finger
 ![piKa](./images/piKa-2.png) 
 
 
-## other stuff
-
-I mounted my ercf at 90 degrees using a french cleat system, which you can find [here](https://github.com/geoffrey-young/3D-Printing/tree/main/models/voron/ercf/mounts/ercf-french-cleat).
-
-the 90 degree mounting created some challenges accessing the filament block ecas connectors, so I made [an extension](https://github.com/geoffrey-young/3D-Printing/tree/main/models/voron/ercf/extender) to help.
-
-a magnetic bowden "bridge" (plus some springs) keeps my bowden tubes straight, clear, and managed.  available [here](https://github.com/geoffrey-young/3D-Printing/tree/main/models/voron/ercf/mounts/bridge).
-
-
 ## pictures
 
 some reference photos, videos, etc
@@ -237,7 +197,52 @@ some reference photos, videos, etc
 | [![ningj-1](./images/user/ningj.png)](./images/user/ningj.png) | [![campapalooza-1](./images/user/campapalooza.jpg)](./images/user/campapalooza.jpg) | [![user-1](./images/user/user-1.png)](./images/user/user-1.png) |
 | [![user-2](./images/user/user-2.jpg)](./images/user/user-2.jpg) | [![user-3](./images/user/user-3.jpg)](./images/user/user-3.jpg) | |
 
-pull requests with your (single 500x500px) picture added to `images/user/` most welcome.
+pull requests against the [current development branch](#contributing) with your (single 500x500px) picture added to `images/user/` most welcome.
+
+
+## why?
+
+filament buffers are hard™
+
+I didn't realize how hard until I ventured down this path.
+
+I started like most do, and loyally printed some [ercf carrot patch](https://github.com/EtteGit/EnragedRabbitProject/tree/main/Carrot_Patch) units.  space limitations required me to mount them overhead, which is where things started to go sideways - every time I needed to put in new filament I had to find a chair and fsck around with the confined carrot patch space, sharp edges, filament whiplash, and whatnot - all overhead - until my shoulders hurt, cursing the entire time.  I figured there had to be a better way...  
+
+it turns out, there really isn't.  yes, there's the nifty [buffer array usermod](https://github.com/EtteGit/EnragedRabbitProject/tree/main/usermods/ERCF-Buffer-Array), which saves on space but doesn't remove what turned out to be my main source of frustration - not having direct access to the wheel.  this alone generated so much yelling the neighbors started to complain.  beyond the carrot patch and its variants, remaining alternative solutions seemed to end in a single slot *hey lets shove the filament in this little space* approach.  given my 1200mm bowden path, those weren't poised to work out well unless I made them half a mile long.
+
+all I wanted was a lightning-fast, super-simple, overhead-mounted, expletive-free, wheel-based, wicked-dependable filament buffer solution.  how hard could it be?
+
+this thing here is where I ended up.
+
+honestly, I'm surprised it actually worked... but it really does, and my experience has been frustration free ever since.  others on discord seem to have similarly joyful experiences with it as well, so I guess I'm on to something.
+
+
+## piKa?
+
+### ***in chemistry...***
+
+a [buffer](https://en.wikipedia.org/wiki/Buffer_solution) is a solution specifically designed to be resistant to changes in pH, allowing a reaction to continue in balance even when ideal conditions are threatened.  the most effective buffers  - those with the greatest capacity to absorb change - are created using an acid whose **p**___Ka___ (acid dissociation constant) is equal to the desired pH.  choosing an acid with the wrong **p**___Ka___ can mean disaster.
+
+**p**___Ka___ is crucial to buffer efficacy
+
+
+### ***in taxonomy...***
+
+three members make up the order [Lagomorpha](https://en.wikipedia.org/wiki/Lagomorpha): rabbits, hares… and pikas
+
+[![american pika](./images/american_pika.jpg)](https://www.nwf.org/Educational-Resources/Wildlife-Guide/Mammals/American-Pika)
+[![american pika](./images/american_pika-2.jpg)](https://www.biographic.com/dine-and-dash/)
+
+pretty cool little creatures, worth getting to know.
+
+
+### ***in multimaterial 3d printing...***
+
+we have a [rabbit](https://github.com/EtteGit/EnragedRabbitProject), and a [hare](https://github.com/moggieuk/ERCF-Software-V3), and now... a pika
+
+![piKa](./images/piKa-1.png)
+
+buffers, solutions, p*Ka*... it all just seemed to come together for a recovering chemist.
 
 
 ## credits
@@ -253,8 +258,16 @@ pull requests with your (single 500x500px) picture added to `images/user/` most 
 - I'm super grateful for some early beta testers, who provided really valuable feedback:
   - `@TheTechRunner V2.1453 V0.1556`
   - `@ningj V2.2726`
+  - `@ZChem V2.5299`
 
 - probably others - if you feel left out let me know :)
+
+
+## contributing
+
+pull requests against the development branch, which is typically the `vN` branch that isn't `main`, more than welcome.  feel free to dm me over in discourse to discuss something first.
+
+be sure to read the [LICENSE](./LICENSE) and mentally agree with it.  please don't make me add license acknowledgement sign-off overhead to the project - we're all just after a kinder buffer experience so we can get on with printing, so let's just focus on that, ok?
 
 
 ## other options
