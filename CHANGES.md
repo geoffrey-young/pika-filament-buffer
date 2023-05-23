@@ -4,6 +4,7 @@
 ## v4 (tbd)
 
 - welcome pika! ([discord announcement](https://discord.com/channels/460117602945990666/909743915475816458/1102319721040334949))
+- [replace screen m43 nuts with heatsets](https://github.com/geoffrey-young/pika-filament-buffer/pull/3) *(thanks [BRueter](https://github.com/brueter/))*
 
 ---
 ## initial release (20230407)
