@@ -128,7 +128,7 @@ the majority of the hardware was selected due to it being common across voron bu
 
 #### a note on magnets...
 
-I used these 10x3 disc magnets [from amazon](https://www.amazon.com/dp/B09ZLFNZ4S).  if those aren't available in your country, you're looking for 10x3 disc magnets with a 3mm hole in the middle, like these:
+I used these 10x3 disc magnets ~~[from amazon]()~~.  if those aren't available in your country, you're looking for 10x3 disc magnets with a 3mm hole in the middle, like these:
 
 [![magnets](./images/magnets-thumb.png)](./images/magnets.png)
 
