@@ -117,7 +117,6 @@ the 9 cart is the most popular, and what I currently run. both the 6 and 12 cart
 | part                                                           | description                                                                                                       | required hardware | 
 | :---                                                           | :---                                                                                                              | :---              |
 | [`array-front.stl`](stl/array-front.stl)                       | front of array                                                                                                    | m3x8              | 
-| [`array-front-screen.stl`](stl/array-front-screen.stl)         | front screen, to enclose the first buffer segment                                                                 | m3x8 flat head    |
 | [`array-back.stl`](stl/array-back.stl)                         | back of the array                                                                                                 | m3x8              |
 | [`array-latch-9a.stl`](stl/array-latch-9a.stl)                 | side latch ([6](stl/array-latch-6a.stl) and [12](stl/array-latch-12a.stl) stls also provided)                     | m3x8              |
 | [`array-latch-9b.stl`](stl/array-latch-9b.stl)                 | side latch ([6](stl/array-latch-6b.stl) and [12](stl/array-latch-12b.stl) stls also provided)                     | m3x8              |
@@ -126,24 +125,30 @@ the 9 cart is the most popular, and what I currently run. both the 6 and 12 cart
 
 ### buffer segments
 
-one complete buffer required per cart
+one complete buffer is required per cart, so for a nine cart system `_xN` turns in to `_x9` and you print 9 of that piece.
 
-three top options are provided: choose either [two ecas connector ends](stl/[a]_buffer-top-ecas+ecas_xN.stl), [one ecas end and one disc magnet end](stl/[a]_buffer-top-ecas+magnet_xN.stl) (my setup), or [two disc magnet ends](stl/[a]_buffer-top-magnet+magnet_xN.stl), whichever is best suited to your setup.
+three buffer top configurations are provided:
 
-| part                                                               | description                                                   | required hardware                                        |
-| :---                                                               | :---                                                          | :---                                                     |
-| [`buffer-bottom_xN.stl`](stl/buffer-bottom_xN.stl)                       | segment bottom                                                | m3 heatset                                               |
+* [two ecas connector ends](stl/[a]_buffer-top-ecas+ecas_xN.stl)
+* [one ecas end and one disc magnet end](stl/[a]_buffer-top-ecas+magnet_xN.stl)
+* [two disc magnet ends](stl/[a]_buffer-top-magnet+magnet_xN.stl)
+
+which configuration you choose depends on the needs of your setup.  
+
+| part                                                                             | description                                                   | required hardware                                        |
+| :---                                                                             | :---                                                          | :---                                                     |
+| [`buffer-bottom_xN.stl`](stl/buffer-bottom_xN.stl)                               | segment bottom                                                | m3 heatset                                               |
 | [`[a]_buffer-top-ecas+ecas_xN.stl`](stl/[a]_buffer-top-ecas+ecas_xN.stl)         | segment top, both sides ecas connector                        | ecas                                                     |
 | [`[a]_buffer-top-ecas+magnet_xN.stl`](stl/[a]_buffer-top-ecas+magnet_xN.stl)     | segment top, one side ecas and one side disc magnet connector | ecas, [disc magnet](#a-note-on-magnets)                  |
 | [`[a]_buffer-top-magnet+magnet_xN.stl`](stl/[a]_buffer-top-magnet+magnet_xN.stl) | segment top, both sides disc magnet connector                 | ecas, [disc magnet](#a-note-on-magnets)                  |
-| [`buffer-bowden-magnet-end.stl`](stl/buffer-bowden-magnet-end.stl) | if you use either of the magnet tops                          | ecas, [disc magnet](#a-note-on-magnets)                  |
-| [`[a]_buffer-screen-a_xN.stl`](stl/[a]_buffer-screen-a_xN.stl)                   | segment screen for wheel                                      | m3x8 flat head                                           |
+| [`[a]_ecas-to-magnet-end_xN.stl`](stl/[a]_ecas-to-magnet-end_xN.stl)             | if you use either of the magnet tops                          | ecas, [disc magnet](#a-note-on-magnets)                  |
+| [`[a]_buffer-screen-a_xN.stl`](stl/[a]_buffer-screen-a_xN.stl)                   | segment screen for wheel                                      | m3x8 flat head, m3 heatset                               |
 | [`[a]_buffer-screen-b_xN.stl`](stl/[a]_buffer-screen-b_xN.stl)                   | segment top screen                                            | [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws) |
 | [`[a]_buffer-bearing-insert_xN.stl`](stl/[a]_buffer-bearing-insert_xN.stl)       | holds the wheel in place                                      | m3x12, m3 nut                                            |
 | [`[a]_buffer-handle_xN.stl`](stl/[a]_buffer-handle_xN.stl)                       | segment handle                                                | m3x8                                                     |
 | [`[a]_buffer-wheel_xN.stl`](stl/[a]_buffer-wheel_xN.stl)                         | wheel                                                         | 608 bearing                                              |
 
-the wheel is same as the ercp wheel, except with a filament hole (with marker) for easier loading.  feel free to use the stock ercp wheel instead if you have some sitting around.
+the wheel is (currently) the same as the ercp wheel, except with a filament hole (with marker) for easier loading.  feel free to use the stock ercp wheel instead if you have some sitting around.
 
 
 ### tag plates
