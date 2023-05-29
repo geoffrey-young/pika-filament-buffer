@@ -1,7 +1,9 @@
 # changes, etc
 ---
 
-## v4 (tbd)
+## r2 (20230529)
+##### release: [r2](https://github.com/geoffrey-young/pika-filament-buffer/releases/tag/r2)
+##### tag: [v4](https://github.com/geoffrey-young/pika-filament-buffer/releases/tag/v4)
 
 - welcome pika! ([discord announcement](https://discord.com/channels/460117602945990666/909743915475816458/1102319721040334949))
 - [replace screen m3 nuts with heatsets](https://github.com/geoffrey-young/pika-filament-buffer/pull/3) *(thanks [BRueter](https://github.com/brueter/))*
@@ -9,7 +11,7 @@
 ---
 ## initial release (20230407)
 ##### release: [r1](https://github.com/geoffrey-young/pika-filament-buffer/releases/tag/r1)
-##### tag: [v3](https://github.com/geoffrey-young/pika-filament-buffer/tree/v3)
+##### tag: [v3](https://github.com/geoffrey-young/pika-filament-buffer/releases/tag/v4)
 
 first official github release!
 
