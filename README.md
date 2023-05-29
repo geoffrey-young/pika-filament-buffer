@@ -128,20 +128,20 @@ the 9 cart is the most popular, and what I currently run. both the 6 and 12 cart
 
 one complete buffer required per cart
 
-three top options are provided: choose either [two ecas connector ends](stl/buffer-top-ecas+ecas.stl), [one ecas end and one disc magnet end](stl/buffer-top-ecas+magnet.stl) (my setup), or [two disc magnet ends](stl/buffer-top-magnet+magnet.stl), whichever is best suited to your setup.
+three top options are provided: choose either [two ecas connector ends](stl/[a]_buffer-top-ecas+ecas_xN.stl), [one ecas end and one disc magnet end](stl/[a]_buffer-top-ecas+magnet_xN.stl) (my setup), or [two disc magnet ends](stl/[a]_buffer-top-magnet+magnet_xN.stl), whichever is best suited to your setup.
 
 | part                                                               | description                                                   | required hardware                                        |
 | :---                                                               | :---                                                          | :---                                                     |
-| [`buffer-bottom.stl`](stl/buffer-bottom.stl)                       | segment bottom                                                | m3 heatset                                               |
-| [`buffer-top-ecas+ecas.stl`](stl/buffer-top-ecas+ecas.stl)         | segment top, both sides ecas connector                        | ecas                                                     |
-| [`buffer-top-ecas+magnet.stl`](stl/buffer-top-ecas+magnet.stl)     | segment top, one side ecas and one side disc magnet connector | ecas, [disc magnet](#a-note-on-magnets)                  |
-| [`buffer-top-magnet+magnet.stl`](stl/buffer-top-magnet+magnet.stl) | segment top, both sides disc magnet connector                 | ecas, [disc magnet](#a-note-on-magnets)                  |
+| [`buffer-bottom_xN.stl`](stl/buffer-bottom_xN.stl)                       | segment bottom                                                | m3 heatset                                               |
+| [`[a]_buffer-top-ecas+ecas_xN.stl`](stl/[a]_buffer-top-ecas+ecas_xN.stl)         | segment top, both sides ecas connector                        | ecas                                                     |
+| [`[a]_buffer-top-ecas+magnet_xN.stl`](stl/[a]_buffer-top-ecas+magnet_xN.stl)     | segment top, one side ecas and one side disc magnet connector | ecas, [disc magnet](#a-note-on-magnets)                  |
+| [`[a]_buffer-top-magnet+magnet_xN.stl`](stl/[a]_buffer-top-magnet+magnet_xN.stl) | segment top, both sides disc magnet connector                 | ecas, [disc magnet](#a-note-on-magnets)                  |
 | [`buffer-bowden-magnet-end.stl`](stl/buffer-bowden-magnet-end.stl) | if you use either of the magnet tops                          | ecas, [disc magnet](#a-note-on-magnets)                  |
-| [`buffer-screen-a.stl`](stl/buffer-screen-a.stl)                   | segment screen for wheel                                      | m3x8 flat head                                           |
-| [`buffer-screen-b.stl`](stl/buffer-screen-b.stl)                   | segment top screen                                            | [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws) |
-| [`buffer-bearing-insert.stl`](stl/buffer-bearing-insert.stl)       | holds the wheel in place                                      | m3x12, m3 nut                                            |
-| [`buffer-handle.stl`](stl/buffer-handle.stl)                       | segment handle                                                | m3x8                                                     |
-| [`buffer-wheel.stl`](stl/buffer-wheel.stl)                         | wheel                                                         | 608 bearing                                              |
+| [`[a]_buffer-screen-a_xN.stl`](stl/[a]_buffer-screen-a_xN.stl)                   | segment screen for wheel                                      | m3x8 flat head                                           |
+| [`[a]_buffer-screen-b_xN.stl`](stl/[a]_buffer-screen-b_xN.stl)                   | segment top screen                                            | [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws) |
+| [`[a]_buffer-bearing-insert_xN.stl`](stl/[a]_buffer-bearing-insert_xN.stl)       | holds the wheel in place                                      | m3x12, m3 nut                                            |
+| [`[a]_buffer-handle_xN.stl`](stl/[a]_buffer-handle_xN.stl)                       | segment handle                                                | m3x8                                                     |
+| [`[a]_buffer-wheel_xN.stl`](stl/[a]_buffer-wheel_xN.stl)                         | wheel                                                         | 608 bearing                                              |
 
 the wheel is same as the ercp wheel, except with a filament hole (with marker) for easier loading.  feel free to use the stock ercp wheel instead if you have some sitting around.
 
@@ -183,7 +183,7 @@ the number of people who haven't figured out the spin-the-wheel-with-your-finger
 
 my `ercf_calib_ref` is currently `1146.4` and I use 5 loops.
 
-beyond that, my tests indicate the [standard wheel](stl/buffer-wheel.stl) can successfully buffer ~300mm per loop up to 6 loops:
+beyond that, my tests indicate the [standard wheel](stl/[a]_buffer-wheel_xN.stl) can successfully buffer ~300mm per loop up to 6 loops:
 
 | loops | buffer capacity |
 | :---  | :---            |
@@ -197,7 +197,7 @@ beyond that, my tests indicate the [standard wheel](stl/buffer-wheel.stl) can su
 
 at 7+ loops two gremlins start to reveal themselves...
 
-the first gremlin is that the filament begins to be more prone to tangling during or after the load seuence.  Experimentation has led me to believe this is mostly due to limitations of the [standard wheel](stl/buffer-wheel.stl) design.
+the first gremlin is that the filament begins to be more prone to tangling during or after the load seuence.  Experimentation has led me to believe this is mostly due to limitations of the [standard wheel](stl/[a]_buffer-wheel_xN.stl) design.
 
 the second gremlin is more insidious in that the weight of the buffered filament begins to compound - once you load 300mm it takes more push to slosh the next 300mm of filament back and coil it up in the cage.  after around 2000mm or so of filament the ercf gear isn't as successful in pushing all the filament along and the consistency of the buffer process begins to degrade.  
 
