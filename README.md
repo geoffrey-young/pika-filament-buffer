@@ -28,7 +28,7 @@
 * [piKa?](#pika)
 * [credits](#credits)
 * [contributing](#contributing)
-* [other options](#other-options)
+* [other buffer options](#other-buffer-options)
 
 ---
 
@@ -69,7 +69,7 @@ the majority of the hardware was selected due to it being common across voron bu
 
 ### a note on magnets...
 
-I used these 10x3 disc magnets [from amazon](https://www.amazon.com/dp/B09ZLFNZ4S).  if those aren't available in your country, you're looking for 10x3 disc magnets with a 3mm hole in the middle, like these:
+I used 10x3 disc magnets ~~[from amazon]()~~, which seem to be a moving target. basically, you're looking for 10x3 disc magnets with a 3mm hole in the middle, like these:
 
 [![magnets](./images/magnets-thumb.png)](./images/magnets.png)
 
@@ -294,7 +294,7 @@ pull requests against the development branch (typically the `vN` branch that isn
 be sure to read the [LICENSE](./LICENSE) and mentally agree with it.  please don't make me add license acknowledgement and sign-off overhead to the project - we're all just after a kinder buffer experience so we can get on with printing, so let's just focus on that, ok?
 
 
-## other options
+## other buffer options
 
 some other proven buffers that may suit your needs:
 
