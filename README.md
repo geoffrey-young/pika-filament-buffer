@@ -1,13 +1,11 @@
 # piKa - a multimaterial filament buffer solution
 
 
-![piKa](./images/piKa-2.png) 
-
 ---
 
-| | | |
-| :---: | :---: | :---: |
 | ![buffer](./images/buffer.jpg) | ![buffer out](./images/buffer-out.jpg) | ![artie](./images/artie-square.jpg) |
+| :---: | :---: | :---: |
+| | ![piKa](./images/piKa-2.png) | |
 
 ---
 
@@ -107,6 +105,8 @@ feel free to ping me on the [voron discord](https://discord.com/channels/4601176
 
 and now... [a manual](./assembly-manual.pdf)
 
+[![manual](./images/assembly-manual.png)](./assembly-manual.pdf)
+
 
 ### array
 
@@ -177,8 +177,6 @@ the number of people who haven't figured out the spin-the-wheel-with-your-finger
 "but how fast and easy is it to load... really?" I hear you cry.  allow satisfied discord user `@ningj V2.2726` to show you:
 
 - https://discord.com/channels/460117602945990666/909743915475816458/1089361904650162266
-
-![piKa](./images/piKa-2.png) 
 
 
 ## how much can I buffer?
