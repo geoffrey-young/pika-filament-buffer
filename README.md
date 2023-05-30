@@ -55,8 +55,7 @@ hopefully this is a full, accurate list...
 | m3x8                                                                     | 38           | 53           | 68            |
 | m3x8 flat head                                                           | 12           | 18           | 24            |
 | m3x12                                                                    | 6            | 9            | 12            |
-| m3 nut                                                                   | 6            | 9            | 12            |
-| m3 heatset                                                               | 18           | 27           | 36            |
+| m3 heatset                                                               | 24           | 36           | 48            |
 | [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws)                 | 42           | 63           | 84            |
 | 608 bearing                                                              | 6            | 9            | 12            |
 | ecas connector                                                           | 12           | 18           | 24            |
