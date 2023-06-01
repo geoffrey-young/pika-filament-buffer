@@ -55,8 +55,7 @@ hopefully this is a full, accurate list...
 | m3x8                                                                     | 38           | 53           | 68            |
 | m3x8 flat head                                                           | 12           | 18           | 24            |
 | m3x12                                                                    | 6            | 9            | 12            |
-| m3 nut                                                                   | 6            | 9            | 12            |
-| m3 heatset                                                               | 18           | 27           | 36            |
+| m3 heatset                                                               | 24           | 36           | 48            |
 | [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws)                 | 42           | 63           | 84            |
 | 608 bearing                                                              | 6            | 9            | 12            |
 | ecas connector                                                           | 12           | 18           | 24            |
@@ -97,7 +96,9 @@ hopefully, y'all find this self explanatory, and can figure it out from the pict
 
 that's about it.
 
-the good news is that there's only one way the parts can really go together, and everyone so far has found it relatively straightforward.  and in late breaking news, there's even [a manual](./assembly-manual.pdf)!
+the good news is that there's only one way the parts can really go together, and everyone so far has found it relatively straightforward.
+
+and in late breaking news, there's even [a manual](./assembly-manual.pdf)!
 
 feel free to ping me on the [voron discord](https://discord.com/channels/460117602945990666/869236671554682990) in [`#ercf_questions`](https://discord.com/channels/460117602945990666/909743915475816458) if you have issues.  
 
@@ -117,6 +118,7 @@ the 9 cart is the most popular, and what I currently run. both the 6 and 12 cart
 | part                                                           | description                                                                                                       | required hardware | 
 | :---                                                           | :---                                                                                                              | :---              |
 | [`array-front.stl`](stl/array-front.stl)                       | front of array                                                                                                    | m3x8              | 
+| [`array-front-screen.stl`](stl/array-front-screen.stl)         | screen for front of array                                                                                         | none              | 
 | [`array-back.stl`](stl/array-back.stl)                         | back of the array                                                                                                 | m3x8              |
 | [`array-latch-9a.stl`](stl/array-latch-9a.stl)                 | side latch ([6](stl/array-latch-6a.stl) and [12](stl/array-latch-12a.stl) stls also provided)                     | m3x8              |
 | [`array-latch-9b.stl`](stl/array-latch-9b.stl)                 | side latch ([6](stl/array-latch-6b.stl) and [12](stl/array-latch-12b.stl) stls also provided)                     | m3x8              |
@@ -144,7 +146,7 @@ which configuration you choose depends on the needs of your setup.
 | [`[a]_ecas-to-magnet-end_xN.stl`](stl/[a]_ecas-to-magnet-end_xN.stl)             | if you use either of the magnet tops                          | ecas, [disc magnet](#a-note-on-magnets)                  |
 | [`[a]_buffer-screen-a_xN.stl`](stl/[a]_buffer-screen-a_xN.stl)                   | segment screen for wheel                                      | m3x8 flat head, m3 heatset                               |
 | [`[a]_buffer-screen-b_xN.stl`](stl/[a]_buffer-screen-b_xN.stl)                   | segment top screen                                            | [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws) |
-| [`[a]_buffer-bearing-insert_xN.stl`](stl/[a]_buffer-bearing-insert_xN.stl)       | holds the wheel in place                                      | m3x12, m3 nut                                            |
+| [`[a]_buffer-bearing-insert_xN.stl`](stl/[a]_buffer-bearing-insert_xN.stl)       | holds the wheel in place                                      | m3x12                                                    |
 | [`[a]_buffer-handle_xN.stl`](stl/[a]_buffer-handle_xN.stl)                       | segment handle                                                | m3x8                                                     |
 | [`[a]_buffer-wheel_xN.stl`](stl/[a]_buffer-wheel_xN.stl)                         | wheel                                                         | 608 bearing                                              |
 
