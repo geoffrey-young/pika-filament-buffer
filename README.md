@@ -9,12 +9,19 @@
 
 ---
 
+## welcome
+
+thanks for checking out piKa, the friendly [ercf](https://github.com/EtteGit/EnragedRabbitProject) filament buffer.
+
+now let's get to it...
+
+
 ## what's here
 
-* [printing](#printing)
 * [BOM](#bom)
   + [a note on magnets...](#a-note-on-magnets)
   + [m2x8 hex cap self threading screws](#m2x8-hex-cap-self-threading-screws)
+* [printing](#printing)
 * [assembly](#assembly)
   + [manual](#manual)
   + [array](#array)
@@ -32,23 +39,9 @@
 
 ---
 
-## printing
-
-a few things to note when printing...
-
-- **the models already oriented for optimal printing**.  no parts have included supports to remove, nor are supports necessary for any part.  if there are overhangs that need support the part is oriented incorrectly.
-- due to bending of large parts, you want to **print the bottoms flat so that the latch fit is tight** - you'll only be able to print 1 or two of these at a time.
-- conversely, **the tops are designed to be printed upright**, so go ahead and fill your plate.  if you care about a good looking bottom overhang, keep your exterior perimeter fans at 100% and engage them starting on layer 2.
-- I used 20% infill and .2mm layer height on the tops and bottoms in order to keep parts light and plastic use down.  **ymmv**.
-- I would suggest printing the latches and bracket using standard voron parameters (40% infill, .2mm layers, 4 perimeters) for added strength.
-- the screen with the posts works best with higher temps and lower fan to keep the layers as strong as possible.  early versions had thinner posts, but the current version is a bit more rigid and should be less problematic.
-- consider using setting `only_one_perimeter_first_layer` to `true` for the screens, which helps the first layer be a little more sane.  well, in superslicer, anyway.
-
-I printed mine in ABS, and most people do the same.  PLA should be fine, but ymmv...
-
 ## BOM
 
-hopefully this is a full, accurate list...
+here is the hardware you'll need.  hopefully this is a full, accurate list...
 
 | item                                                                     | 6 cart total | 9 cart total | 12 cart total |
 | :---                                                                     | :---         | :---         | :---          |
@@ -59,7 +52,7 @@ hopefully this is a full, accurate list...
 | [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws)                 | 42           | 63           | 84            |
 | 608 bearing                                                              | 6            | 9            | 12            |
 | ecas connector                                                           | 12           | 18           | 24            |
-| [disc magnet](#a-note-on-magnets) (optional, depending on configuration) | 12           | 18           | 24            |
+| [10x3 disc magnet with 3mm hole](#a-note-on-magnets) (optional)          | 6-12         | 9-18         | 12-24         |
 | PTFE/FEP 4mm OD x (2.5mm or 3.0mm ID) tubing                             | variable     | variable     | variable      |
 
 plus mounting hardware if you want to use the bottom bracket to mount the array on something.
@@ -74,17 +67,33 @@ I used 10x3 disc magnets ~~[from amazon]()~~, which seem to be a moving target. 
 
 magnets with 4mm holes are a little better, but outside of the very first set I ordered I haven't been able to find any.
 
-**just a small wrinkle...** as with the 6x3mm magnets for the ercf, the majority of "10x3mm" hole magnets in the wild are really around 9.5mm in diameter.  as such, the buffer parts are designed against this width.
+**just a small wrinkle...** as with the "6x3mm" magnets for the ercf and other voron projects, parts are designed against sizes most commonly provided by suppliers.  in our case, the majority of "10x3mm" hole magnets in the wild are really around 9.5mm in diameter.  as such, piKa parts are designed against this width.
 
 [![magnet-lies-2](./images/magnet-lies-2-thumb.png)](./images/magnet-lies-2.png) [![magnet-lies](./images/magnet-lies-thumb.png)](./images/magnet-lies.png)
 
-if you have real 10mm magnets they'll be too large and you'll want to keep looking.  or maybe lightly sand the plastic, depending on how much room your magnets need.  solution coming soon™
+if you have true 10x3mm magnets they'll be too large for the standard magnet tops and connectors.  the good news is that you now have options: **see the [10mm](./stl/10mm-magnets/) directory for alternative parts if you have true 10x3mm magnets.**
+
 
 ### m2x8 hex cap self threading screws
 
 these m2x8 hex cap self threading screws [from amazon](https://www.amazon.com/gp/product/B00YBMRAH4) are really handy, both for this and other voron projects, like klicky.  m2x10 will also work in current buffer versions if those are easier to find.  
 
 [![screws](./images/screws-thumb.png)](./images/screws.png)
+
+
+## printing
+
+a few things to note when printing...
+
+- **the models already oriented for optimal printing**.  no parts have included supports to remove, nor are supports necessary for any part.  if there are overhangs that need support the part is oriented incorrectly.
+- due to bending of large parts, you want to **print the bottoms flat so that the latch fit is tight** - you'll only be able to print 1 or two of these at a time.
+- conversely, **the tops are designed to be printed upright**, so go ahead and fill your plate.  if you care about a good looking bottom overhang, keep your exterior perimeter fans at 100% and engage them starting on layer 2.
+- I used 20% infill on the tops and bottoms in order to keep parts light and plastic use down.  **ymmv**.
+- I would suggest printing the latches and bracket using standard voron parameters (40% infill, .2mm layers, 4 perimeters) for added strength.
+- the screen with the posts works best with higher temps and lower fan to keep the layers as strong as possible.  early versions had thinner posts, but the current version is a bit more rigid and should be less problematic.
+- consider using setting `only_one_perimeter_first_layer` to `true` for the screens, which helps the first layer be a little more sane.  well, in superslicer, anyway.
+
+I printed mine in ABS, and most people do the same.  PLA should be fine, but ymmv...
 
 
 ## assembly
@@ -136,6 +145,8 @@ three buffer top configurations are provided:
 * [two disc magnet ends](stl/[a]_buffer-top-magnet+magnet_xN.stl)
 
 which configuration you choose depends on the needs of your setup.  
+
+please see [the note on magnets](#a-note-on-magnets), and check out the [10mm magnet options](./stl/10mm-magnets/) as required. 
 
 | part                                                                             | description                                                   | required hardware                                        |
 | :---                                                                             | :---                                                          | :---                                                     |
@@ -290,6 +301,7 @@ buffers, solutions, p*Ka*... the name just seemed to come together for a recover
   - `@ZChem V2.5299`
   - `@SilentMuse V2.3841`
   - `@Imburr VT.959`
+  - `@xF4m3 V2.3687`
 
 - probably others - if you feel left out let me know :)
 

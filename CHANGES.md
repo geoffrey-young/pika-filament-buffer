@@ -2,6 +2,10 @@
 ---
 
 ## r3 (tbd)
+##### release: [r2](https://github.com/geoffrey-young/pika-filament-buffer/releases/tag/r3)
+##### tag: [v4](https://github.com/geoffrey-young/pika-filament-buffer/releases/tag/v5)
+
+- added support for true 10x3mm magnets *(thanks @Gandalf and @xF4m3 V2.3687)*
 
 
 ## r2 (20230529)
@@ -28,3 +32,4 @@ in no particular order:
 - @xF4m3 V2.3687
 - @anxman
 - @Imburr VT.959
+- @xF4m3 V2.3687
