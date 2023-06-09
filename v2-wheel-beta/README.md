@@ -39,5 +39,6 @@ remember: it's a beta, so there are no guarantees here.  if you use it on a 500 
 
 many thanks to the early beta testers:
 
-- @ningj V2.2726
-- @Imburr VT.959
+- `@ningj V2.2726`
+- `@Imburr VT.959`
+- `@SilentMuse V2.3841`
