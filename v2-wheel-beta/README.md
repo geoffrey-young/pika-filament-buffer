@@ -34,3 +34,10 @@ so I started there and tried to answer my questions with different designs and e
 I've documented most of what I discovered [in the base README](../README.md#how-much-can-i-buffer), and had a few people besides me experiment with the new wheel with a decent degree of success.  now it's time for a slightly wider audience.
 
 remember: it's a beta, so there are no guarantees here.  if you use it on a 500 hour print and things go awry, well...
+
+### thanks
+
+many thanks to the early beta testers:
+
+- @ningj V2.2726
+- @Imburr VT.959
