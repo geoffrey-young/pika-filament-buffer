@@ -2,7 +2,7 @@
 
 it's a beta.  you've been warned.
 
-| `r1` | [`wheel-beta-r1`](./stl/wheel-beta-r1.stl) |
+| `r1` | [`wheel-beta-r1.stl`](./stl/wheel-beta-r1.stl) |
 | :---: | :---: |
 
 
