@@ -71,7 +71,11 @@ magnets with 4mm holes are a little better, but outside of the very first set I 
 
 [![magnet-lies-2](./images/magnet-lies-2-thumb.png)](./images/magnet-lies-2.png) [![magnet-lies](./images/magnet-lies-thumb.png)](./images/magnet-lies.png)
 
-if you have true 10x3mm magnets they'll be too large for the standard magnet tops and connectors.  the good news is that you now have options: **see the [10mm](./stl/10mm-magnets/) directory for alternative parts if you have true 10x3mm magnets.**
+if you have true 10x3mm magnets they'll be too large for the standard magnet tops and connectors.  the good news is that you now have options.
+
+[![magnet test blocks](./images/magnet-test-blocks.png)](./stl/10mm-magnets/magnet-test-blocks.stl)
+
+after printing the [magnet test blocks](./stl/10mm-magnets/magnet-test-blocks.stl) to verify your fit, the [10mm](./stl/10mm-magnets/) directory has the files you'll need.
 
 
 ### m2x8 hex cap self threading screws
