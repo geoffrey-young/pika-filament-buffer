@@ -18,6 +18,7 @@ first official github release!
 special thanks to everyone who helped troubleshoot, support, and improve this little project.  I don't know what we'll do with all our free time, now that we're not wrestling with buffers every 5 minutes...
 
 in no particular order:
+
 - @TheTechRunner V2.1453 V0.1556
 - @ningj V2.2726
 - @ZChem V2.5299

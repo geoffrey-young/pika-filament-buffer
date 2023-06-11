@@ -3,10 +3,22 @@
 it's a beta.  you've been warned.
 
 | `r1` | [`wheel-beta-r1.stl`](./stl/wheel-beta-r1.stl) |
-| :---: | :---: |
+| :--- | :--- |
 
 
 ---
+
+### what's different?
+
+the beta wheel has a few features that hope to make a difference in our specific application:
+
+| feature      | (potential) impact                                                                                                                                                                      |
+| :---         | :---                                                                                                                                                                                    |
+| weight       | the wheel is ~1g lighter than the stock wheel when sliced identically.  a lighter wheel is easier to move, reducing system friction                                                     |
+| drum shape   | use of a [two-cylinder drum](./JS0q4v-jom_v35_1_131.pdf) smooths winding/unwinding motions for more uniform system tension                                                              |
+| drum width   | more usable width on the drum results in less filament overlap for the same number of loops, reducing both friction and tangles                                                         |
+| contact area | using the screen itself to guide filament on the wheel removes an overhang, which in turn reduces the surface area of the wheel in potential contact with the screen, reducing friction | 
+
 
 ### background...
 
@@ -23,7 +35,7 @@ well, there are plenty of people who [reinvent the wheel](https://en.wikipedia.o
 
 it turns out, there are scientists who study this stuff.
 
-one of the [studies I found](./JS0q4v-jom_v35_1_131.pdf) investigated coiling and uncoiling effects in commercial cable systems, and demonstrated that an off-center drum like this resulted in a more uniform system:
+[one of the studies](./JS0q4v-jom_v35_1_131.pdf) I found investigated coiling and uncoiling effects in commercial cable systems, and demonstrated that a two-cylinder drum like this resulted in a more uniform system:
 
 ![drum](./drum.png)
 
