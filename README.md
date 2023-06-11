@@ -113,7 +113,7 @@ and now... [a manual](./assembly-manual.pdf)
 
 currently, there are 6, 9, and 12 slot versions.  the only parts that differ depending on the number of slots are the side latches and bottom bracket.
 
-the 9 cart is the most popular, and what I currently run. both the 6 and 12 cart versions have at least one user I've worked through the design with, so I'm confident in the dimentional accuracy. however, if you discover an issue with the sizing just let me know.
+the 9 cart is the most popular, and what I currently run. both the 6 and 12 cart versions have at least one user I've worked through the design with, so I'm confident in the dimensional accuracy. however, if you discover an issue with the sizing just let me know.
 
 | part                                                           | description                                                                                                       | required hardware | 
 | :---                                                           | :---                                                                                                              | :---              |
@@ -204,11 +204,11 @@ beyond that, my tests indicate the [standard wheel](stl/[a]_buffer-wheel_xN.stl)
 
 at 7+ loops two gremlins start to reveal themselves...
 
-the first gremlin is that the filament begins to be more prone to tangling during or after the load seuence.  Experimentation has led me to believe this is mostly due to limitations of the [standard wheel](stl/[a]_buffer-wheel_xN.stl) design.
+the first gremlin is that the filament begins to be more prone to tangling during or after the load sequence.  Experimentation has led me to believe this is mostly due to limitations of the [standard wheel](stl/[a]_buffer-wheel_xN.stl) design.
 
 the second gremlin is more insidious in that the weight of the buffered filament begins to compound - once you load 300mm it takes more push to slosh the next 300mm of filament back and coil it up in the cage.  after around 2000mm or so of filament the ercf gear isn't as successful in pushing all the filament along and the consistency of the buffer process begins to degrade.  
 
-the former probelm I'm begining to solve with a new wheel concept, while no wheel design can counteract the laws of physics governing the latter.  I'm still giving this latter gremlin some thought...
+the former problem I'm beginning to solve with a new wheel concept, while no wheel design can counteract the laws of physics governing the latter.  I'm still giving this latter gremlin some thought...
 
 
 ## pictures
@@ -276,7 +276,7 @@ buffers, solutions, p*Ka*... the name just seemed to come together for a recover
 
 ## credits
 
-- the entire concept here started after seeing [this mmu buffer on printables.com](https://www.printables.com/model/30811-mmu-slot-buffer).  while my work isn't really a mod of that (I modeled everything myself from scratch), I did copy the latch concept nearly... verbatim?  I'm sure there's a word for it.  anyway, the latch works really well, and needless to say I coudn't have figured a mechanism like that on my own.  this project owes sincere credit and gratitude to all the work and effort over there.  many thanks!
+- the entire concept here started after seeing [this mmu buffer on printables.com](https://www.printables.com/model/30811-mmu-slot-buffer).  while my work isn't really a mod of that (I modeled everything myself from scratch), I did copy the latch concept nearly... verbatim?  I'm sure there's a word for it.  anyway, the latch works really well, and needless to say I couldn't have figured a mechanism like that on my own.  this project owes sincere credit and gratitude to all the work and effort over there.  many thanks!
 
 - all the fittings and cutouts - ecas and m3 holes, bridging, etc - were taken directly from either the [ercf project](https://github.com/EtteGit/EnragedRabbitProject) or the [voron 2.4 project](https://github.com/VoronDesign/Voron-2/).  since I use blender and don't cad, I really appreciate all the community work that has gone into getting those measurements and fit tricks just right.  kudos to team voron, be they enraged or not.
 
