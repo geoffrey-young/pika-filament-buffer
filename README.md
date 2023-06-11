@@ -9,12 +9,19 @@
 
 ---
 
+## welcome
+
+thanks for checking out piKa, the friendly [ercf](https://github.com/EtteGit/EnragedRabbitProject) filament buffer.
+
+now let's get to it...
+
+
 ## what's here
 
-* [printing](#printing)
 * [BOM](#bom)
   + [a note on magnets...](#a-note-on-magnets)
   + [m2x8 hex cap self threading screws](#m2x8-hex-cap-self-threading-screws)
+* [printing](#printing)
 * [assembly](#assembly)
   + [manual](#manual)
   + [array](#array)
@@ -32,23 +39,9 @@
 
 ---
 
-## printing
-
-a few things to note when printing...
-
-- **the models already oriented for optimal printing**.  no parts have included supports to remove, nor are supports necessary for any part.  if there are overhangs that need support the part is oriented incorrectly.
-- due to bending of large parts, you want to **print the bottoms flat so that the latch fit is tight** - you'll only be able to print 1 or two of these at a time.
-- conversely, **the tops are designed to be printed upright**, so go ahead and fill your plate.  if you care about a good looking bottom overhang, keep your exterior perimeter fans at 100% and engage them starting on layer 2.
-- I used 20% infill and .2mm layer height on the tops and bottoms in order to keep parts light and plastic use down.  **ymmv**.
-- I would suggest printing the latches and bracket using standard voron parameters (40% infill, .2mm layers, 4 perimeters) for added strength.
-- the screen with the posts works best with higher temps and lower fan to keep the layers as strong as possible.  early versions had thinner posts, but the current version is a bit more rigid and should be less problematic.
-- consider using setting `only_one_perimeter_first_layer` to `true` for the screens, which helps the first layer be a little more sane.  well, in superslicer, anyway.
-
-I printed mine in ABS, and most people do the same.  PLA should be fine, but ymmv...
-
 ## BOM
 
-hopefully this is a full, accurate list...
+here is the hardware you'll need.  hopefully this is a full, accurate list...
 
 | item                                                                     | 6 cart total | 9 cart total | 12 cart total |
 | :---                                                                     | :---         | :---         | :---          |
@@ -59,7 +52,7 @@ hopefully this is a full, accurate list...
 | [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws)                 | 42           | 63           | 84            |
 | 608 bearing                                                              | 6            | 9            | 12            |
 | ecas connector                                                           | 12           | 18           | 24            |
-| [disc magnet](#a-note-on-magnets) (optional, depending on configuration) | 12           | 18           | 24            |
+| [10x3 disc magnet with 3mm hole](#a-note-on-magnets) (optional)          | 6-12         | 9-18         | 12-24         |
 | PTFE/FEP 4mm OD x (2.5mm or 3.0mm ID) tubing                             | variable     | variable     | variable      |
 
 plus mounting hardware if you want to use the bottom bracket to mount the array on something.
@@ -85,6 +78,21 @@ if you have real 10mm magnets they'll be too large and you'll want to keep looki
 these m2x8 hex cap self threading screws [from amazon](https://www.amazon.com/gp/product/B00YBMRAH4) are really handy, both for this and other voron projects, like klicky.  m2x10 will also work in current buffer versions if those are easier to find.  
 
 [![screws](./images/screws-thumb.png)](./images/screws.png)
+
+
+## printing
+
+a few things to note when printing...
+
+- **the models already oriented for optimal printing**.  no parts have included supports to remove, nor are supports necessary for any part.  if there are overhangs that need support the part is oriented incorrectly.
+- due to bending of large parts, you want to **print the bottoms flat so that the latch fit is tight** - you'll only be able to print 1 or two of these at a time.
+- conversely, **the tops are designed to be printed upright**, so go ahead and fill your plate.  if you care about a good looking bottom overhang, keep your exterior perimeter fans at 100% and engage them starting on layer 2.
+- I used 20% infill on the tops and bottoms in order to keep parts light and plastic use down.  **ymmv**.
+- I would suggest printing the latches and bracket using standard voron parameters (40% infill, .2mm layers, 4 perimeters) for added strength.
+- the screen with the posts works best with higher temps and lower fan to keep the layers as strong as possible.  early versions had thinner posts, but the current version is a bit more rigid and should be less problematic.
+- consider using setting `only_one_perimeter_first_layer` to `true` for the screens, which helps the first layer be a little more sane.  well, in superslicer, anyway.
+
+I printed mine in ABS, and most people do the same.  PLA should be fine, but ymmv...
 
 
 ## assembly
@@ -113,7 +121,7 @@ and now... [a manual](./assembly-manual.pdf)
 
 currently, there are 6, 9, and 12 slot versions.  the only parts that differ depending on the number of slots are the side latches and bottom bracket.
 
-the 9 cart is the most popular, and what I currently run. both the 6 and 12 cart versions have at least one user I've worked through the design with, so I'm confident in the dimentional accuracy. however, if you discover an issue with the sizing just let me know.
+the 9 cart is the most popular, and what I currently run. both the 6 and 12 cart versions have at least one user I've worked through the design with, so I'm confident in the dimensional accuracy. however, if you discover an issue with the sizing just let me know.
 
 | part                                                           | description                                                                                                       | required hardware | 
 | :---                                                           | :---                                                                                                              | :---              |
@@ -137,13 +145,15 @@ three buffer top configurations are provided:
 
 which configuration you choose depends on the needs of your setup.  
 
+please see [the note on magnets](#a-note-on-magnets)
+
 | part                                                                             | description                                                   | required hardware                                        |
 | :---                                                                             | :---                                                          | :---                                                     |
 | [`buffer-bottom_xN.stl`](stl/buffer-bottom_xN.stl)                               | segment bottom                                                | m3 heatset                                               |
 | [`[a]_buffer-top-ecas+ecas_xN.stl`](stl/[a]_buffer-top-ecas+ecas_xN.stl)         | segment top, both sides ecas connector                        | ecas                                                     |
-| [`[a]_buffer-top-ecas+magnet_xN.stl`](stl/[a]_buffer-top-ecas+magnet_xN.stl)     | segment top, one side ecas and one side disc magnet connector | ecas, [disc magnet](#a-note-on-magnets)                  |
-| [`[a]_buffer-top-magnet+magnet_xN.stl`](stl/[a]_buffer-top-magnet+magnet_xN.stl) | segment top, both sides disc magnet connector                 | ecas, [disc magnet](#a-note-on-magnets)                  |
-| [`[a]_ecas-to-magnet-end_xN.stl`](stl/[a]_ecas-to-magnet-end_xN.stl)             | if you use either of the magnet tops                          | ecas, [disc magnet](#a-note-on-magnets)                  |
+| [`[a]_buffer-top-ecas+magnet_xN.stl`](stl/[a]_buffer-top-ecas+magnet_xN.stl)     | segment top, one side ecas and one side disc magnet connector | ecas, [9.5mm disc magnet](#a-note-on-magnets)            |
+| [`[a]_buffer-top-magnet+magnet_xN.stl`](stl/[a]_buffer-top-magnet+magnet_xN.stl) | segment top, both sides disc magnet connector                 | ecas, [9.5mm disc magnet](#a-note-on-magnets)            |
+| [`[a]_ecas-to-magnet-end_xN.stl`](stl/[a]_ecas-to-magnet-end_xN.stl)             | if you use either of the magnet tops                          | ecas, [9.5mm disc magnet](#a-note-on-magnets)            |
 | [`[a]_buffer-screen-a_xN.stl`](stl/[a]_buffer-screen-a_xN.stl)                   | segment screen for wheel                                      | m3x8 flat head, m3 heatset                               |
 | [`[a]_buffer-screen-b_xN.stl`](stl/[a]_buffer-screen-b_xN.stl)                   | segment top screen                                            | [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws) |
 | [`[a]_buffer-bearing-insert_xN.stl`](stl/[a]_buffer-bearing-insert_xN.stl)       | holds the wheel in place                                      | m3x12                                                    |
@@ -204,11 +214,11 @@ beyond that, my tests indicate the [standard wheel](stl/[a]_buffer-wheel_xN.stl)
 
 at 7+ loops two gremlins start to reveal themselves...
 
-the first gremlin is that the filament begins to be more prone to tangling during or after the load seuence.  Experimentation has led me to believe this is mostly due to limitations of the [standard wheel](stl/[a]_buffer-wheel_xN.stl) design.
+the first gremlin is that the filament begins to be more prone to tangling during or after the load sequence.  Experimentation has led me to believe this is mostly due to limitations of the [standard wheel](stl/[a]_buffer-wheel_xN.stl) design.
 
 the second gremlin is more insidious in that the weight of the buffered filament begins to compound - once you load 300mm it takes more push to slosh the next 300mm of filament back and coil it up in the cage.  after around 2000mm or so of filament the ercf gear isn't as successful in pushing all the filament along and the consistency of the buffer process begins to degrade.  
 
-the former probelm I'm begining to solve with a new wheel concept, while no wheel design can counteract the laws of physics governing the latter.  I'm still giving this latter gremlin some thought...
+the former problem I'm beginning to solve with a new wheel concept, while no wheel design can counteract the laws of physics governing the latter.  I'm still giving this latter gremlin some thought...
 
 
 ## pictures
@@ -276,7 +286,7 @@ buffers, solutions, p*Ka*... the name just seemed to come together for a recover
 
 ## credits
 
-- the entire concept here started after seeing [this mmu buffer on printables.com](https://www.printables.com/model/30811-mmu-slot-buffer).  while my work isn't really a mod of that (I modeled everything myself from scratch), I did copy the latch concept nearly... verbatim?  I'm sure there's a word for it.  anyway, the latch works really well, and needless to say I coudn't have figured a mechanism like that on my own.  this project owes sincere credit and gratitude to all the work and effort over there.  many thanks!
+- the entire concept here started after seeing [this mmu buffer on printables.com](https://www.printables.com/model/30811-mmu-slot-buffer).  while my work isn't really a mod of that (I modeled everything myself from scratch), I did copy the latch concept nearly... verbatim?  I'm sure there's a word for it.  anyway, the latch works really well, and needless to say I couldn't have figured a mechanism like that on my own.  this project owes sincere credit and gratitude to all the work and effort over there.  many thanks!
 
 - all the fittings and cutouts - ecas and m3 holes, bridging, etc - were taken directly from either the [ercf project](https://github.com/EtteGit/EnragedRabbitProject) or the [voron 2.4 project](https://github.com/VoronDesign/Voron-2/).  since I use blender and don't cad, I really appreciate all the community work that has gone into getting those measurements and fit tricks just right.  kudos to team voron, be they enraged or not.
 
@@ -290,6 +300,7 @@ buffers, solutions, p*Ka*... the name just seemed to come together for a recover
   - `@ZChem V2.5299`
   - `@SilentMuse V2.3841`
   - `@Imburr VT.959`
+  - `@xF4m3 V2.3687`
 
 - probably others - if you feel left out let me know :)
 
