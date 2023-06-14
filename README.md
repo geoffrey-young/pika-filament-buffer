@@ -11,7 +11,7 @@
 
 ## welcome
 
-thanks for checking out piKa, the friendly [ercf](https://github.com/EtteGit/EnragedRabbitProject) filament buffer.
+thanks for checking out [piKa](#pika), the friendly [ercf](https://github.com/EtteGit/EnragedRabbitProject) filament buffer.
 
 now let's get to it...
 
