@@ -6,6 +6,7 @@
 ##### tag: [v4](https://github.com/geoffrey-young/pika-filament-buffer/releases/tag/v5)
 
 - added support for true 10x3mm magnets *(thanks @Gandalf and @xF4m3 V2.3687)*
+- removed ecas+ecas option
 
 
 ## r2 (20230529)
