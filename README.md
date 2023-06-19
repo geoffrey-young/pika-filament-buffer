@@ -52,7 +52,7 @@ here is the hardware you'll need.  hopefully this is a full, accurate list...
 | [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws)                 | 42           | 63           | 84            |
 | 608 bearing                                                              | 6            | 9            | 12            |
 | ecas connector                                                           | 12           | 18           | 24            |
-| [10x3 disc magnet with 3mm hole](#a-note-on-magnets) (optional)          | 6-12         | 9-18         | 12-24         |
+| [10x3 disc magnet with 3mm hole](#a-note-on-magnets)                     | 6-12         | 9-18         | 12-24         |
 | PTFE/FEP 4mm OD x (2.5mm or 3.0mm ID) tubing                             | variable     | variable     | variable      |
 
 plus mounting hardware if you want to use the bottom bracket to mount the array on something.
@@ -142,9 +142,8 @@ the 9 cart is the most popular, and what I currently run. both the 6 and 12 cart
 
 one complete buffer is required per cart, so for a nine cart system `_xN` turns in to `_x9` and you print 9 of that piece.
 
-three buffer top configurations are provided:
+two buffer top configurations are provided:
 
-* [two ecas connector ends](stl/[a]_buffer-top-ecas+ecas_xN.stl)
 * [one ecas end and one disc magnet end](stl/[a]_buffer-top-ecas+magnet_xN.stl)
 * [two disc magnet ends](stl/[a]_buffer-top-magnet+magnet_xN.stl)
 
@@ -155,7 +154,6 @@ please see [the note on magnets](#a-note-on-magnets), and check out the [10mm ma
 | part                                                                             | description                                                   | required hardware                                        |
 | :---                                                                             | :---                                                          | :---                                                     |
 | [`buffer-bottom_xN.stl`](stl/buffer-bottom_xN.stl)                               | segment bottom                                                | m3 heatset                                               |
-| [`[a]_buffer-top-ecas+ecas_xN.stl`](stl/[a]_buffer-top-ecas+ecas_xN.stl)         | segment top, both sides ecas connector                        | ecas                                                     |
 | [`[a]_buffer-top-ecas+magnet_xN.stl`](stl/[a]_buffer-top-ecas+magnet_xN.stl)     | segment top, one side ecas and one side disc magnet connector | ecas, [9.5mm disc magnet](#a-note-on-magnets)            |
 | [`[a]_buffer-top-magnet+magnet_xN.stl`](stl/[a]_buffer-top-magnet+magnet_xN.stl) | segment top, both sides disc magnet connector                 | ecas, [9.5mm disc magnet](#a-note-on-magnets)            |
 | [`[a]_ecas-to-magnet-end_xN.stl`](stl/[a]_ecas-to-magnet-end_xN.stl)             | if you use either of the magnet tops                          | ecas, [9.5mm disc magnet](#a-note-on-magnets)            |
