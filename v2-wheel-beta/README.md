@@ -8,6 +8,8 @@ it's a beta.  you've been warned.
 
 ---
 
+![beta wheel](./beta-wheel.png)
+
 ### what's different?
 
 the beta wheel has a few features that hope to make a difference in our specific application:
