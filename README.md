@@ -52,7 +52,7 @@ here is the hardware you'll need.  hopefully this is a full, accurate list...
 | [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws)                 | 42           | 63           | 84            |
 | 608 bearing                                                              | 6            | 9            | 12            |
 | ecas connector                                                           | 12           | 18           | 24            |
-| [10x3 disc magnet with 3mm hole](#a-note-on-magnets)                     | 6-12         | 9-18         | 12-24         |
+| [10x3 disc magnet with 3mm hole](#a-note-on-magnets) (optional)          | 12-24        | 18-36        | 24-48         |
 | PTFE/FEP 4mm OD x (2.5mm or 3.0mm ID) tubing                             | variable     | variable     | variable      |
 
 plus mounting hardware if you want to use the bottom bracket to mount the array on something.
