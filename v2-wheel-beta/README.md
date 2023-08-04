@@ -80,8 +80,8 @@ now that you're at the bottom, I'm sure you read all of that and are deserving o
 |      | [`wheel-beta-r1.stl`](./stl/r1/wheel-beta-r1.stl)                                                               | <- [the whole point](#the-wheel)                        |
 |      | [`[a]_buffer-bearing-insert_xN-beta-r1.stl`](./stl/r1/[a]_buffer-bearing-insert_xN-beta-r1.stl)                 | <- [important](#the-bearing-insert)                     |
 |      | | |
-|      | [`[a]_buffer-top-ecas+magnet_xN-beta-r1.stl`](./stl/r1/[a]_buffer-top-ecas+magnet_xN-beta-r1.stl)               | [more experimental](#the-buffer-tops) from here on down | 
-|      | [`[a]_buffer-top-magnet+magnet_xN-beta-r1.stl`](./stl/r1/[a]_buffer-top-magnet+magnet_xN-beta-r1.stl)           |                                                         | 
+|      | [`[a]_buffer-top-ecas+magnet_xN-beta-r1.stl`](./stl/r1/[a]_buffer-top-ecas+magnet_xN-beta-r1.stl)               | [more experimental](#the-buffer-tops) from here on down |
+|      | [`[a]_buffer-top-magnet+magnet_xN-beta-r1.stl`](./stl/r1/[a]_buffer-top-magnet+magnet_xN-beta-r1.stl)           |                                                         |
 |      | [`[a]_10mm-buffer-top-ecas+magnet_xN-beta-r1.stl`](./stl/r1/[a]_10mm-buffer-top-ecas+magnet_xN-beta-r1.stl)     |                                                         |
 |      | [`[a]_10mm-buffer-top-magnet+magnet_xN-beta-r1.stl`](./stl/r1/[a]_10mm-buffer-top-magnet+magnet_xN-beta-r1.stl) |                                                         |
 
