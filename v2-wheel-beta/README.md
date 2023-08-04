@@ -2,19 +2,13 @@
 
 it's a beta.  you've been warned.
 
-| `r1` | |
-|      | [`wheel-beta-r1.stl`](./stl/wheel-beta-r1.stl) |
-|      | [`bearing-insert-beta-r1.stl`](./stl/bearing-insert-beta-r1.stl) |
-| :--- | :--- |
-
+![beta wheel](./beta-wheel.png)
 
 ---
 
-![beta wheel](./beta-wheel.png)
+## what's different?
 
-### what's different?
-
-##### the wheel
+### the wheel
 
 the beta wheel has a few features that hope to make a difference in our specific application:
 
@@ -25,16 +19,22 @@ the beta wheel has a few features that hope to make a difference in our specific
 | drum width   | more usable width on the drum results in less filament overlap for the same number of loops, reducing both friction and tangles                                                         |
 | contact area | using the screen itself to guide filament on the wheel removes an overhang, which in turn reduces the surface area of the wheel in potential contact with the screen, reducing friction | 
 
-##### the bearing insert
+### the bearing insert
 
-since the bearing inserts from the other side, the bearing insert is a bit longer as a visual and mental cue:
+since the bearing now faces the screen, if the bearing isn't fully seated it leaves a gap between the screen and wheel that we don't want.
 
-**if the bearing insert is flush or recessed with the front of the wheel your bearing isn't fully seated**
+as such, the bearing insert is a bit longer, the length serving as a visual and mental cue:
+
+**NOTE: if the bearing insert is flush with the front of the wheel or recessed _your bearing isn't fully seated!_**
 
 when the bearing is properly seated the insert should be proud of the front of the wheel by a single 0.2mm layer
 
+### the buffer tops
 
-### background...
+the beta buffer tops experient with altering the ptfe path to position the filament for smoother ingress to and egress from the wheel.  the tradeoff is a slightly curved path through the buffer ends.  we'll see how it works out
+
+
+## background...
 
 the pika buffer project started with my ercp frustration, but as with any open source project it still made sense to copy over the things that worked.  and who reinvents the wheel, right?
 
@@ -55,16 +55,33 @@ it turns out, there are scientists who study this stuff.
 
 so I started there and tried to answer my questions with different designs and experimentation.
 
-### next steps
+## next steps
 
 I've documented most of what I discovered [in the base README](../README.md#how-much-can-i-buffer), and had a few people besides me experiment with the new wheel with a decent degree of success.  now it's time for a slightly wider audience.
 
 remember: it's a beta, so there are no guarantees here.  if you use it on a 500 hour print and things go awry, well...
 
-### thanks
+
+## thanks
 
 many thanks to the early beta testers:
 
 - `@ningj V2.2726`
 - `@Imburr VT.959`
 - `@SilentMuse V2.3841`
+
+
+---
+
+now that you're at the bottom, I'm sure you read all of that and are deserving of the beta files...
+
+| `r1` |                                                                                                                 |
+| :--- | :---                                                                                                            |
+|      | [`wheel-beta-r1.stl`](./stl/r1/wheel-beta-r1.stl)                                                               |
+|      | [`[a]_buffer-bearing-insert_xN-beta-r1.stl`](./stl/r1/[a]_buffer-bearing-insert_xN-beta-r1.stl)                 |
+|      | [`[a]_buffer-top-ecas+magnet_xN-beta-r1.stl`](./stl/r1/[a]_buffer-top-ecas+magnet_xN-beta-r1.stl)               |
+|      | [`[a]_buffer-top-magnet+magnet_xN-beta-r1.stl`](./stl/r1/[a]_buffer-top-magnet+magnet_xN-beta-r1.stl)           |
+|      | [`[a]_10mm-buffer-top-ecas+magnet_xN-beta-r1.stl`](./stl/r1/[a]_10mm-buffer-top-ecas+magnet_xN-beta-r1.stl)     |
+|      | [`[a]_10mm-buffer-top-magnet+magnet_xN-beta-r1.stl`](./stl/r1/[a]_10mm-buffer-top-magnet+magnet_xN-beta-r1.stl) |
+
+---
