@@ -16,8 +16,8 @@ thanks for checking out [piKa](#pika), the friendly [ercf](https://github.com/Et
 now let's get to it...
 
 
-## what's here
-
+* [operation](#operation)
+* [how much can I buffer?](#how-much-can-i-buffer)
 * [BOM](#bom)
   + [a note on magnets...](#a-note-on-magnets)
   + [m2x8 hex cap self threading screws](#m2x8-hex-cap-self-threading-screws)
@@ -28,8 +28,6 @@ now let's get to it...
   + [buffer segments](#buffer-segments)
   + [tag plates](#tag-plates)
 * [mounting](#mounting)
-* [operation](#operation)
-* [how much can I buffer?](#how-much-can-i-buffer)
 * [pictures](#pictures)
 * [why?](#why)
 * [piKa?](#pika)
@@ -38,6 +36,48 @@ now let's get to it...
 * [other buffer options](#other-buffer-options)
 
 ---
+
+## operation
+
+buffer operation made simple...
+
+[![operation-feed-thumb.png](./images/operation-feed-thumb.png)](./images/operation-feed.png)  [![operation-anchor-thumb.png](./images/operation-anchor-thumb.png)](./images/operation-anchor.png)  [![operation-spin-thumb.png](./images/operation-spin-thumb.png)](./images/operation-spin.png)  [![operation-pull-thumb.png](./images/operation-pull-thumb.png)](./images/operation-pull.png)
+
+there's also a video of the buffer in action I posted on discord that's worth a look:
+
+- https://discord.com/channels/460117602945990666/708772910956937336/1038298353324273754
+
+the number of people who haven't figured out the spin-the-wheel-with-your-finger method is significantly higher than I would have imagined.
+
+"but how fast and easy is it to load... really?" I hear you cry.  allow satisfied discord user `@ningj V2.2726` to show you:
+
+- https://discord.com/channels/460117602945990666/909743915475816458/1089361904650162266
+
+
+## how much can I buffer?
+
+my `ercf_calib_ref` is currently `1146.4` and I use 5 loops.
+
+beyond that, my tests indicate the [standard wheel](stl/[a]_buffer-wheel_xN.stl) can successfully buffer ~300mm per loop up to 6 loops:
+
+| loops | buffer capacity |
+| :---  | :---            |
+| 1     | 300mm           | 
+| 2     | 600mm           | 
+| 3     | 900mm           | 
+| 4     | 1200mm          | 
+| 5     | 1500mm          | 
+| 6     | 1800mm          | 
+| 7+    | not recommended | 
+
+at 7+ loops two gremlins start to reveal themselves...
+
+the first gremlin is that the filament begins to be more prone to tangling during or after the load sequence.  Experimentation has led me to believe this is mostly due to limitations of the [standard wheel](stl/[a]_buffer-wheel_xN.stl) design.
+
+the second gremlin is more insidious in that the weight of the buffered filament begins to compound - once you load 300mm it takes more push to slosh the next 300mm of filament back and coil it up in the cage.  after around 2000mm or so of filament the ercf gear isn't as successful in pushing all the filament along and the consistency of the buffer process begins to degrade.  
+
+the former problem I'm beginning to solve with a new wheel concept, while no wheel design can counteract the laws of physics governing the latter.  I'm still giving this latter gremlin some thought...
+
 
 ## BOM
 
@@ -132,12 +172,12 @@ the 9 cart is the most popular, and what I currently run. both the 6 and 12 cart
 
 | part                                                           | description                                                                                                       | required hardware | 
 | :---                                                           | :---                                                                                                              | :---              |
-| [`array-front.stl`](stl/array-front.stl)                       | front of array                                                                                                    | m3x8              | 
+| [`array-front.stl`](stl/array-front.stl)                       | front of array                                                                                                    | m3x8 (or m3x10)   | 
 | [`array-front-screen.stl`](stl/array-front-screen.stl)         | screen for front of array                                                                                         | none              | 
-| [`array-back.stl`](stl/array-back.stl)                         | back of the array                                                                                                 | m3x8              |
-| [`array-latch-9a.stl`](stl/array-latch-9a.stl)                 | side latch ([6](stl/array-latch-6a.stl) and [12](stl/array-latch-12a.stl) stls also provided)                     | m3x8              |
-| [`array-latch-9b.stl`](stl/array-latch-9b.stl)                 | side latch ([6](stl/array-latch-6b.stl) and [12](stl/array-latch-12b.stl) stls also provided)                     | m3x8              |
-| [`array-bottom-bracket-9.stl`](stl/array-bottom-bracket-9.stl) | bottom bracket ([6](stl/array-bottom-bracket-6.stl) and [12](stl/array-bottom-bracket-12.stl) stls also provided) | m3x8              |
+| [`array-back.stl`](stl/array-back.stl)                         | back of the array                                                                                                 | m3x8 (or m3x10)   |
+| [`array-latch-9a.stl`](stl/array-latch-9a.stl)                 | side latch ([6](stl/array-latch-6a.stl) and [12](stl/array-latch-12a.stl) stls also provided)                     | m3x8 (or m3x10)   |
+| [`array-latch-9b.stl`](stl/array-latch-9b.stl)                 | side latch ([6](stl/array-latch-6b.stl) and [12](stl/array-latch-12b.stl) stls also provided)                     | m3x8 (or m3x10)   |
+| [`array-bottom-bracket-9.stl`](stl/array-bottom-bracket-9.stl) | bottom bracket ([6](stl/array-bottom-bracket-6.stl) and [12](stl/array-bottom-bracket-12.stl) stls also provided) | m3x8 (or m3x10)   |
 
 
 ### buffer segments
@@ -159,10 +199,10 @@ please see [the note on magnets](#a-note-on-magnets), and check out the [10mm ma
 | [`[a]_buffer-top-ecas+magnet_xN.stl`](stl/[a]_buffer-top-ecas+magnet_xN.stl)     | segment top, one side ecas and one side disc magnet connector | ecas, [9.5mm disc magnet](#a-note-on-magnets)            |
 | [`[a]_buffer-top-magnet+magnet_xN.stl`](stl/[a]_buffer-top-magnet+magnet_xN.stl) | segment top, both sides disc magnet connector                 | ecas, [9.5mm disc magnet](#a-note-on-magnets)            |
 | [`[a]_ecas-to-magnet-end_xN.stl`](stl/[a]_ecas-to-magnet-end_xN.stl)             | if you use either of the magnet tops                          | ecas, [9.5mm disc magnet](#a-note-on-magnets)            |
-| [`[a]_buffer-screen-a_xN.stl`](stl/[a]_buffer-screen-a_xN.stl)                   | segment screen for wheel                                      | m3x8 flat head, m3 heatset                               |
+| [`[a]_buffer-screen-a_xN.stl`](stl/[a]_buffer-screen-a_xN.stl)                   | segment screen for wheel                                      | m3x8 (or m3x10) flat head, m3 heatset                    |
 | [`[a]_buffer-screen-b_xN.stl`](stl/[a]_buffer-screen-b_xN.stl)                   | segment top screen                                            | [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws) |
 | [`[a]_buffer-bearing-insert_xN.stl`](stl/[a]_buffer-bearing-insert_xN.stl)       | holds the wheel in place                                      | m3x12                                                    |
-| [`[a]_buffer-handle_xN.stl`](stl/[a]_buffer-handle_xN.stl)                       | segment handle                                                | m3x8                                                     |
+| [`[a]_buffer-handle_xN.stl`](stl/[a]_buffer-handle_xN.stl)                       | segment handle                                                | m3x8 (or m3x10)                                          |
 | [`[a]_buffer-wheel_xN.stl`](stl/[a]_buffer-wheel_xN.stl)                         | wheel                                                         | 608 bearing                                              |
 
 the wheel is (currently) the same as the ercp wheel, except with a filament hole (with marker) for easier loading.  feel free to use the stock ercp wheel instead if you have some sitting around.
@@ -182,48 +222,6 @@ with that in mind, I mount my ercf on the wall at 90 degrees using a french clea
 the 90 degree mounting created some challenges accessing the filament block ecas connectors, so I made [an extension](https://github.com/geoffrey-young/3D-Printing/tree/main/models/voron/ercf/extender) to help.
 
 a magnetic bowden "bridge" (plus some springs) keeps my bowden tubes straight, clear, and managed.  available [here](https://github.com/geoffrey-young/3D-Printing/tree/main/models/voron/ercf/mounts/bridge).
-
-
-## operation
-
-buffer operation made simple...
-
-[![operation-feed-thumb.png](./images/operation-feed-thumb.png)](./images/operation-feed.png)  [![operation-anchor-thumb.png](./images/operation-anchor-thumb.png)](./images/operation-anchor.png)  [![operation-spin-thumb.png](./images/operation-spin-thumb.png)](./images/operation-spin.png)  [![operation-pull-thumb.png](./images/operation-pull-thumb.png)](./images/operation-pull.png)
-
-there's also a video of the buffer in action I posted on discord that's worth a look:
-
-- https://discord.com/channels/460117602945990666/708772910956937336/1038298353324273754
-
-the number of people who haven't figured out the spin-the-wheel-with-your-finger method is significantly higher than I would have imagined.
-
-"but how fast and easy is it to load... really?" I hear you cry.  allow satisfied discord user `@ningj V2.2726` to show you:
-
-- https://discord.com/channels/460117602945990666/909743915475816458/1089361904650162266
-
-
-## how much can I buffer?
-
-my `ercf_calib_ref` is currently `1146.4` and I use 5 loops.
-
-beyond that, my tests indicate the [standard wheel](stl/[a]_buffer-wheel_xN.stl) can successfully buffer ~300mm per loop up to 6 loops:
-
-| loops | buffer capacity |
-| :---  | :---            |
-| 1     | 300mm           | 
-| 2     | 600mm           | 
-| 3     | 900mm           | 
-| 4     | 1200mm          | 
-| 5     | 1500mm          | 
-| 6     | 1800mm          | 
-| 7+    | not recommended | 
-
-at 7+ loops two gremlins start to reveal themselves...
-
-the first gremlin is that the filament begins to be more prone to tangling during or after the load sequence.  Experimentation has led me to believe this is mostly due to limitations of the [standard wheel](stl/[a]_buffer-wheel_xN.stl) design.
-
-the second gremlin is more insidious in that the weight of the buffered filament begins to compound - once you load 300mm it takes more push to slosh the next 300mm of filament back and coil it up in the cage.  after around 2000mm or so of filament the ercf gear isn't as successful in pushing all the filament along and the consistency of the buffer process begins to degrade.  
-
-the former problem I'm beginning to solve with a new wheel concept, while no wheel design can counteract the laws of physics governing the latter.  I'm still giving this latter gremlin some thought...
 
 
 ## pictures
