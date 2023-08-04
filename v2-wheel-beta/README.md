@@ -2,7 +2,9 @@
 
 it's a beta.  you've been warned.
 
-| `r1` | [`wheel-beta-r1.stl`](./stl/wheel-beta-r1.stl) |
+| `r1` | |
+|      | [`wheel-beta-r1.stl`](./stl/wheel-beta-r1.stl) |
+|      | [`bearing-insert-beta-r1.stl`](./stl/bearing-insert-beta-r1.stl) |
 | :--- | :--- |
 
 
@@ -12,6 +14,8 @@ it's a beta.  you've been warned.
 
 ### what's different?
 
+##### the wheel
+
 the beta wheel has a few features that hope to make a difference in our specific application:
 
 | feature      | (potential) impact                                                                                                                                                                      |
@@ -20,6 +24,14 @@ the beta wheel has a few features that hope to make a difference in our specific
 | drum shape   | use of a [two-cylinder drum](./JS0q4v-jom_v35_1_131.pdf) smooths winding/unwinding motions for more uniform system tension                                                              |
 | drum width   | more usable width on the drum results in less filament overlap for the same number of loops, reducing both friction and tangles                                                         |
 | contact area | using the screen itself to guide filament on the wheel removes an overhang, which in turn reduces the surface area of the wheel in potential contact with the screen, reducing friction | 
+
+##### the bearing insert
+
+since the bearing inserts from the other side, the bearing insert is a bit longer as a visual and mental cue:
+
+**if the bearing insert is flush or recessed with the front of the wheel your bearing isn't fully seated**
+
+when the bearing is properly seated the insert should be proud of the front of the wheel by a single 0.2mm layer
 
 
 ### background...
