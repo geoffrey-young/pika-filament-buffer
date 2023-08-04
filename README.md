@@ -45,8 +45,8 @@ here is the hardware you'll need.  hopefully this is a full, accurate list...
 
 | item                                                                     | 6 cart total | 9 cart total | 12 cart total |
 | :---                                                                     | :---         | :---         | :---          |
-| m3x8                                                                     | 38           | 53           | 68            |
-| m3x8 flat head                                                           | 12           | 18           | 24            |
+| m3x8 (or m3x10)                                                          | 38           | 53           | 68            |
+| m3x8 (or m3x10) flat head                                                | 12           | 18           | 24            |
 | m3x12                                                                    | 6            | 9            | 12            |
 | m3 heatset                                                               | 24           | 36           | 48            |
 | [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws)                 | 42           | 63           | 84            |
@@ -54,6 +54,8 @@ here is the hardware you'll need.  hopefully this is a full, accurate list...
 | ecas connector                                                           | 12           | 18           | 24            |
 | [10x3 disc magnet with 3mm hole](#a-note-on-magnets) (optional)          | 12-24        | 18-36        | 24-48         |
 | PTFE/FEP 4mm OD x (2.5mm or 3.0mm ID) tubing                             | variable     | variable     | variable      |
+
+note that all of the m3x8 screw holes are long enough to accept m3x10
 
 plus mounting hardware if you want to use the bottom bracket to mount the array on something.
 
@@ -80,7 +82,7 @@ after printing the [magnet test blocks](./stl/10mm-magnets/magnet-test-blocks.st
 
 ### m2x8 hex cap self threading screws
 
-these m2x8 hex cap self threading screws [from amazon](https://www.amazon.com/gp/product/B00YBMRAH4) are really handy, both for this and other voron projects, like klicky.  m2x10 will also work in current buffer versions if those are easier to find.  
+these m2x8 hex cap self threading screws [from amazon](https://www.amazon.com/gp/product/B00YBMRAH4) are really handy, both for this and other voron projects, like klicky.  m2x10 will also work if those are easier to find.  
 
 [![screws](./images/screws-thumb.png)](./images/screws.png)
 
