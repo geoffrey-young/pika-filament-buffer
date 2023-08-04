@@ -322,7 +322,7 @@ buffers, solutions, p*Ka*... the name just seemed to come together for a recover
 
 ## contributing
 
-pull requests against the development branch (typically the `vN` branch that isn't `main`) more than welcome.  feel free to dm me over in discord to discuss something first.
+pull requests against [the `dev` branch](https://github.com/geoffrey-young/pika-filament-buffer/tree/v2-wheel-beta/) more than welcome.  feel free to dm me over in discord to discuss something first.
 
 be sure to read the [LICENSE](./LICENSE) and mentally agree with it.  please don't make me add license acknowledgement and sign-off overhead to the project - we're all just after a kinder buffer experience so we can get on with printing, so let's just focus on that, ok?
 
