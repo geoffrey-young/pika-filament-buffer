@@ -18,6 +18,8 @@ now let's get to it...
 
 * [operation](#operation)
 * [how much can I buffer?](#how-much-can-i-buffer)
+  + [testing](#testing)
+  + [limitations](#limitations)
 * [BOM](#bom)
   + [a note on magnets...](#a-note-on-magnets)
   + [m2x8 hex cap self threading screws](#m2x8-hex-cap-self-threading-screws)
@@ -70,9 +72,19 @@ beyond that, my tests indicate the [standard wheel](stl/[a]_buffer-wheel_xN.stl)
 | 6     | 1800mm          | 
 | 7+    | not recommended | 
 
+### testing
+
+I've added the [klipper macro](./klipper/pika.cfg) I use to test repeated buffer load/unload cycles, which is a great way to exercise your setup without printing.
+
+***!!! you must remove the bowden from the toolhead before running this macro.  you've been warned !!!***
+
+### limitations
+
+pika performance is steady and reliable up to 6 loops, which should provide more than enough for the vast majority of setups.
+
 at 7+ loops two gremlins start to reveal themselves...
 
-the first gremlin is that the filament begins to be more prone to tangling during or after the load sequence.  Experimentation has led me to believe this is mostly due to limitations of the [standard wheel](stl/[a]_buffer-wheel_xN.stl) design.
+the first gremlin is that the filament begins to be more prone to tangling during or after the load sequence.  experimentation has led me to believe this is mostly due to limitations of the [standard wheel](stl/[a]_buffer-wheel_xN.stl) design.
 
 the second gremlin is more insidious in that the weight of the buffered filament begins to compound - once you load 300mm it takes more push to slosh the next 300mm of filament back and coil it up in the cage.  after around 2000mm or so of filament the ercf gear isn't as successful in pushing all the filament along and the consistency of the buffer process begins to degrade.  
 
