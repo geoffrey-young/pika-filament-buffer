@@ -1,13 +1,13 @@
 # changes, etc
 ---
 
-## r3 (tbd)
+## r3 (20230804)
 ##### release: [r2](https://github.com/geoffrey-young/pika-filament-buffer/releases/tag/r3)
-##### tag: [v4](https://github.com/geoffrey-young/pika-filament-buffer/releases/tag/v5)
+##### tag: [v5](https://github.com/geoffrey-young/pika-filament-buffer/releases/tag/v5)
 
 - added support for true 10x3mm magnets *(thanks @Gandalf and @xF4m3)*
-- removed ecas+ecas option
 - extended m3x8 holes to m3x10 *(thanks @mortis_robotum and @pinched_nerve)*
+- removed ecas+ecas option (you'll all thank me later)
 
 
 ## r2 (20230529)
