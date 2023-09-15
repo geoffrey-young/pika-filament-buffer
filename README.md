@@ -100,7 +100,7 @@ here is the hardware you'll need.  hopefully this is a full, accurate list...
 | m3x8 (or m3x10)                                                          | 38           | 53           | 68            |
 | m3x8 (or m3x10) flat head                                                | 12           | 18           | 24            |
 | m3x12                                                                    | 6            | 9            | 12            |
-| m3 heatset                                                               | 24           | 36           | 48            |
+| m3 heatset (standard voron m3 x 5mm x 4mm)                               | 24           | 36           | 48            |
 | [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws)                 | 42           | 63           | 84            |
 | 608 bearing                                                              | 6            | 9            | 12            |
 | ecas connector                                                           | 12           | 18           | 24            |
@@ -292,7 +292,7 @@ pretty cool little creatures, worth getting to know.
 
 ### ***in multimaterial 3d printing...***
 
-we have a [rabbit](https://github.com/EtteGit/EnragedRabbitProject), and a [hare](https://github.com/moggieuk/ERCF-Software-V3), and now... a pika
+we have a [rabbit](https://github.com/EtteGit/EnragedRabbitProject), and a [hare](https://github.com/moggieuk/Happy-Hare), and now... a pika
 
 ![piKa](./images/piKa-1.png)
 
