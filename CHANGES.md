@@ -2,6 +2,7 @@
 ---
 
 ## r4 (tbd)
+- reduced heatset holes to 4.6mm diameter
 
 
 ## r3 (20230804)
