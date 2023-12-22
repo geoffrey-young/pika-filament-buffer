@@ -88,7 +88,7 @@ the first gremlin is that the filament begins to be more prone to tangling durin
 
 the second gremlin is more insidious in that the weight of the buffered filament begins to compound - once you load 300mm it takes more push to slosh the next 300mm of filament back and coil it up in the cage.  after around 2000mm or so of filament the ercf gear isn't as successful in pushing all the filament along and the consistency of the buffer process begins to degrade.  
 
-the former problem I'm beginning to solve with a [https://github.com/geoffrey-young/pika-filament-buffer/tree/v2-wheel-beta/v2-wheel-beta](new wheel concept), while no wheel design can counteract the laws of physics governing the latter.  I'm still giving this latter gremlin some thought...
+the former problem I'm beginning to solve with a [new wheel concept](https://github.com/geoffrey-young/pika-filament-buffer/tree/v2-wheel-beta/v2-wheel-beta), while no wheel design can counteract the laws of physics governing the latter.  I'm still giving this latter gremlin some thought...
 
 
 ## BOM
