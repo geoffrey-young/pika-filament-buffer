@@ -95,17 +95,17 @@ the former problem I'm beginning to solve with a [new wheel concept](https://git
 
 here is the hardware you'll need.  hopefully this is a full, accurate list...
 
-| item                                                                     | 6 cart total | 9 cart total | 12 cart total |
-| :---                                                                     | :---         | :---         | :---          |
-| m3x8 (or m3x10)                                                          | 38           | 53           | 68            |
-| m3x8 (or m3x10) flat head                                                | 12           | 18           | 24            |
-| m3x12                                                                    | 6            | 9            | 12            |
-| m3 heatset (standard voron m3 x 5mm x 4mm)                               | 24           | 36           | 48            |
-| [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws)                 | 42           | 63           | 84            |
-| 608 bearing                                                              | 6            | 9            | 12            |
-| ecas connector                                                           | 12           | 18           | 24            |
-| [10x3 disc magnet with 3mm hole](#a-note-on-magnets) (optional)          | 12-24        | 18-36        | 24-48         |
-| PTFE/FEP 4mm OD x (2.5mm or 3.0mm ID) tubing                             | variable     | variable     | variable      |
+| item                                                                     | 3 cart total | 6 cart total | 9 cart total | 12 cart total |
+| :---                                                                     | :---         | :---         | :---         | :---          |
+| m3x8 (or m3x10)                                                          | 23           | 38           | 53           | 68            |
+| m3x8 (or m3x10) flat head                                                | 6            | 12           | 18           | 24            |
+| m3x12                                                                    | 3            | 6            | 9            | 12            |
+| m3 heatset (standard voron m3 x 5mm x 4mm)                               | 12           | 24           | 36           | 48            |
+| [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws)                 | 21           | 42           | 63           | 84            |
+| 608 bearing                                                              | 3            | 6            | 9            | 12            |
+| ecas connector                                                           | 6            | 12           | 18           | 24            |
+| [10x3 disc magnet with 3mm hole](#a-note-on-magnets) (optional)          | 6-12         | 12-24        | 18-36        | 24-48         |
+| PTFE/FEP 4mm OD x (2.5mm or 3.0mm ID) tubing                             | variable     | variable     | variable     | variable      |
 
 note that all of the m3x8 screw holes are long enough to accept m3x10
 
@@ -187,9 +187,9 @@ the 9 cart is the most popular, and what I currently run. both the 6 and 12 cart
 | [`array-front.stl`](stl/array-front.stl)                       | front of array                                                                                                    | m3x8 (or m3x10)   | 
 | [`array-front-screen.stl`](stl/array-front-screen.stl)         | screen for front of array                                                                                         | none              | 
 | [`array-back.stl`](stl/array-back.stl)                         | back of the array                                                                                                 | m3x8 (or m3x10)   |
-| [`array-latch-9a.stl`](stl/array-latch-9a.stl)                 | side latch ([6](stl/array-latch-6a.stl) and [12](stl/array-latch-12a.stl) stls also provided)                     | m3x8 (or m3x10)   |
-| [`array-latch-9b.stl`](stl/array-latch-9b.stl)                 | side latch ([6](stl/array-latch-6b.stl) and [12](stl/array-latch-12b.stl) stls also provided)                     | m3x8 (or m3x10)   |
-| [`array-bottom-bracket-9.stl`](stl/array-bottom-bracket-9.stl) | bottom bracket ([6](stl/array-bottom-bracket-6.stl) and [12](stl/array-bottom-bracket-12.stl) stls also provided) | m3x8 (or m3x10)   |
+| [`array-latch-9a.stl`](stl/array-latch-9a.stl)                 | side latch (stls for 3, 6, and 12 cart versions also provided)                                                    | m3x8 (or m3x10)   |
+| [`array-latch-9b.stl`](stl/array-latch-9b.stl)                 | side latch (stls for 3, 6, and 12 cart versions also provided)                                                    | m3x8 (or m3x10)   |
+| [`array-bottom-bracket-9.stl`](stl/array-bottom-bracket-9.stl) | bottom bracket (stls for 3, 6, and 12 cart versions also provided)                                                | m3x8 (or m3x10)   |
 
 
 ### buffer segments
@@ -227,7 +227,7 @@ if you mount your buffer overhead your numbers will be upside down.  you can fin
 
 ## mounting
 
-in general I'm not a fan of sticking the ercf on my printer - something just makes me think all that extra weight and rattling around can't be good for my resonance compensation efforts.
+in general I'm not a fan of sticking the ercf on my printer - something just makes me think all that extra weight and loose pieces rattling around can't be good for my resonance compensation efforts.
 
 with that in mind, I mount my ercf on the wall at 90 degrees using a french cleat system, which you can find [here](https://github.com/geoffrey-young/3D-Printing/tree/main/models/voron/ercf/mounts/ercf-french-cleat).
 
@@ -262,9 +262,9 @@ I didn't realize how hard until I ventured down this path.
 
 I started like most do, and loyally printed some [ercf carrot patch](https://github.com/EtteGit/EnragedRabbitProject/tree/main/Carrot_Patch) units.  space limitations required me to mount them overhead, which is where things started to go sideways - every time I needed to put in new filament I had to find a chair and fsck around with the confined carrot patch space, sharp edges, filament whiplash, and whatnot - all overhead - until my shoulders hurt, cursing the entire time.  I figured there had to be a better way...  
 
-it turns out, there really isn't.  yes, there's the nifty [buffer array usermod](https://github.com/EtteGit/EnragedRabbitProject/tree/main/usermods/ERCF-Buffer-Array), which saves on space but doesn't remove what turned out to be my main source of frustration - not having direct access to the wheel.  this alone generated so much yelling the neighbors started to complain.  beyond the carrot patch and its variants, remaining alternative solutions seemed to end in a single slot *hey lets shove the filament in this little space* approach.  given my 1200mm bowden path, those weren't poised to work out well unless I made them half a mile long.
+it turns out, there really wasn't...  at least not at the time.  since then, the community has been kind enough to generate a few [different buffer options](#other-buffer-options), each with its unique set of benefits and drawbacks depending on your needs, setup, and tolerance.  all of them are better than the original ercp, imho, which is good for everyone.  however, I'm of the opinion that they all still have drawbacks, leaving us still chasing the platonic ideal filament buffer solution...
 
-all I wanted was a lightning-fast, super-simple, overhead-mounted, expletive-free, wheel-based, wicked-dependable filament buffer solution.  how hard could it be?
+still, way back then all I wanted was a lightning-fast, super-simple, overhead-mounted, expletive-free, wheel-based, wicked-dependable filament buffer solution.  how hard could it be?
 
 this thing here is where I ended up.
 
@@ -329,8 +329,11 @@ be sure to read the [LICENSE](./LICENSE) and mentally agree with it.  please don
 
 ## other buffer options
 
-some other proven buffers that may suit your needs:
+some other community buffers that may suit your needs:
 
 - [carrot quiver](https://github.com/SkiBikePrint/ERCF_Mods/tree/main/Carrot_Quiver_Buffer)
-- [ercf buffer array](https://github.com/EtteGit/EnragedRabbitProject/tree/main/usermods/ERCF-Buffer-Array)
+- [stern wheeler](https://www.printables.com/model/472316-stern-wheeler)
+- [cotton tail](https://github.com/Enraged-Rabbit-Community/ERCF_v2/blob/master/Recommended_Options/ERCT_Buffer)
+
+I suggest asking on discord about these other buffers and their strengths and weaknesses and decide what buffer is best for your situation.
 
