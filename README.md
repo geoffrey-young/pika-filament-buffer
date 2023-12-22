@@ -262,9 +262,9 @@ I didn't realize how hard until I ventured down this path.
 
 I started like most do, and loyally printed some [ercf carrot patch](https://github.com/EtteGit/EnragedRabbitProject/tree/main/Carrot_Patch) units.  space limitations required me to mount them overhead, which is where things started to go sideways - every time I needed to put in new filament I had to find a chair and fsck around with the confined carrot patch space, sharp edges, filament whiplash, and whatnot - all overhead - until my shoulders hurt, cursing the entire time.  I figured there had to be a better way...  
 
-it turns out, there really isn't.  yes, there's the nifty [buffer array usermod](https://github.com/EtteGit/EnragedRabbitProject/tree/main/usermods/ERCF-Buffer-Array), which saves on space but doesn't remove what turned out to be my main source of frustration - not having direct access to the wheel.  this alone generated so much yelling the neighbors started to complain.  beyond the carrot patch and its variants, remaining alternative solutions seemed to end in a single slot *hey lets shove the filament in this little space* approach.  given my 1200mm bowden path, those weren't poised to work out well unless I made them half a mile long.
+it turns out, there really wasn't...  at least not at the time.  since then, the community has been kind enough to generate a few [different buffer options](#other-buffer-options), each with its unique set of benefits and drawbacks depending on your needs, setup, and tolerance.  all of them are better than the original ercp, imho, which is good for everyone.  however, I'm of the opinion that they all still have drawbacks, leaving us still chasing the platonic ideal filament buffer solution...
 
-all I wanted was a lightning-fast, super-simple, overhead-mounted, expletive-free, wheel-based, wicked-dependable filament buffer solution.  how hard could it be?
+still, way back then all I wanted was a lightning-fast, super-simple, overhead-mounted, expletive-free, wheel-based, wicked-dependable filament buffer solution.  how hard could it be?
 
 this thing here is where I ended up.
 
@@ -329,8 +329,11 @@ be sure to read the [LICENSE](./LICENSE) and mentally agree with it.  please don
 
 ## other buffer options
 
-some other proven buffers that may suit your needs:
+some other community buffers that may suit your needs:
 
 - [carrot quiver](https://github.com/SkiBikePrint/ERCF_Mods/tree/main/Carrot_Quiver_Buffer)
-- [ercf buffer array](https://github.com/EtteGit/EnragedRabbitProject/tree/main/usermods/ERCF-Buffer-Array)
+- [stern wheeler](https://www.printables.com/model/472316-stern-wheeler)
+- [cotton tail](https://github.com/Enraged-Rabbit-Community/ERCF_v2/blob/master/Recommended_Options/ERCT_Buffer)
+
+I suggest asking on discord about these other buffers and their strengths and weaknesses and decide what buffer is best for your situation.
 
