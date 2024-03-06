@@ -26,6 +26,7 @@ now let's get to it...
 * [printing](#printing)
 * [assembly](#assembly)
   + [manual](#manual)
+  + [video](#video)
   + [array](#array)
   + [buffer segments](#buffer-segments)
   + [tag plates](#tag-plates)
@@ -165,7 +166,7 @@ that's about it.
 
 the good news is that there's only one way the parts can really go together, and everyone so far has found it relatively straightforward.
 
-and in late breaking news, there's even [a manual](./assembly-manual.pdf)!
+and in late breaking news, there's even [a manual](./assembly-manual.pdf) and a [video][#video]!
 
 feel free to ping me on the [voron discord](https://discord.com/channels/460117602945990666/869236671554682990) in [`#ercf_questions`](https://discord.com/channels/460117602945990666/909743915475816458) if you have issues.  
 
@@ -176,9 +177,16 @@ and now... [a manual](./assembly-manual.pdf)
 [![manual](./images/assembly-manual.png)](./assembly-manual.pdf)
 
 
+### video
+
+recently, @MakerMylo created a [video](https://youtu.be/PdVolU5ywEg) of an [8 cart pika build](https://www.printables.com/model/776988-8-lane-pika-filament-buffer-ercf-v2) which you may find helpful as well.
+
+
 ### array
 
 currently, there are 6, 9, and 12 slot versions.  the only parts that differ depending on the number of slots are the side latches and bottom bracket.
+
+for [ERCF v2](https://github.com/Enraged-Rabbit-Community/ERCF_v2) users, @MakerMylo has [8 cart pika latches and brackets](https://www.printables.com/model/776988-8-lane-pika-filament-buffer-ercf-v2) available on [printables](https://www.printables.com/).
 
 the 9 cart is the most popular, and what I currently run. both the 6 and 12 cart versions have at least one user I've worked through the design with, so I'm confident in the dimensional accuracy. however, if you discover an issue with the sizing just let me know.
 
