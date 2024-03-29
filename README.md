@@ -96,17 +96,17 @@ the former problem I'm beginning to solve with a [new wheel concept](https://git
 
 here is the hardware you'll need.  hopefully this is a full, accurate list...
 
-| item                                                                     | 3 cart total | 6 cart total | 9 cart total | 12 cart total |
-| :---                                                                     | :---         | :---         | :---         | :---          |
-| m3x8 (or m3x10)                                                          | 23           | 38           | 53           | 68            |
-| m3x8 (or m3x10) flat head                                                | 6            | 12           | 18           | 24            |
-| m3x12                                                                    | 3            | 6            | 9            | 12            |
-| m3 heatset (standard voron m3 x 5mm x 4mm)                               | 12           | 24           | 36           | 48            |
-| [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws)                 | 21           | 42           | 63           | 84            |
-| 608 bearing                                                              | 3            | 6            | 9            | 12            |
-| ecas connector                                                           | 6            | 12           | 18           | 24            |
-| [10x3 disc magnet with 3mm hole](#a-note-on-magnets) (optional)          | 6-12         | 12-24        | 18-36        | 24-48         |
-| PTFE/FEP 4mm OD x (2.5mm or 3.0mm ID) tubing                             | variable     | variable     | variable     | variable      |
+| item                                                                     | 3 cart total | 6 cart total | 8 cart total | 9 cart total | 12 cart total |
+| :---                                                                     | :---         | :---         | :---         | :---         | :---          |
+| m3x8 (or m3x10)                                                          | 23           | 38           | 48           | 53           | 68            |
+| m3x8 (or m3x10) flat head                                                | 6            | 12           | 16           | 18           | 24            |
+| m3x12                                                                    | 3            | 6            | 8            | 9            | 12            |
+| m3 heatset (standard voron m3 x 5mm x 4mm)                               | 12           | 24           | 32           | 36           | 48            |
+| [m2x8 self tapping](#m2x8-hex-cap-self-threading-screws)                 | 21           | 42           | 56           | 63           | 84            |
+| 608 bearing                                                              | 3            | 6            | 8            | 9            | 12            |
+| ecas connector                                                           | 6            | 12           | 16           | 18           | 24            |
+| [10x3 disc magnet with 3mm hole](#a-note-on-magnets) (optional)          | 6-12         | 12-24        | 16-32        | 18-36        | 24-48         |
+| PTFE/FEP 4mm OD x (2.5mm or 3.0mm ID) tubing                             | variable     | variable     | variable     | variable     | variable      |
 
 note that all of the m3x8 screw holes are long enough to accept m3x10
 
@@ -184,9 +184,9 @@ recently, @MakerMylo created a [video](https://youtu.be/PdVolU5ywEg) of an [8 ca
 
 ### array
 
-currently, there are 6, 9, and 12 slot versions.  the only parts that differ depending on the number of slots are the side latches and bottom bracket.
+currently, there are 6, 9, and 12 slot versions for [ERCF classic](https://github.com/EtteGit/EnragedRabbitProject), plus an 8 cart version for [ERCF v2](https://github.com/Enraged-Rabbit-Community/ERCF_v2).
 
-for [ERCF v2](https://github.com/Enraged-Rabbit-Community/ERCF_v2) users, @MakerMylo has [8 cart pika latches and brackets](https://www.printables.com/model/776988-8-lane-pika-filament-buffer-ercf-v2) available on [printables](https://www.printables.com/).
+the only parts that differ depending on the number of slots are the side latches and bottom bracket.
 
 the 9 cart is the most popular, and what I currently run. both the 6 and 12 cart versions have at least one user I've worked through the design with, so I'm confident in the dimensional accuracy. however, if you discover an issue with the sizing just let me know.
 
@@ -195,9 +195,9 @@ the 9 cart is the most popular, and what I currently run. both the 6 and 12 cart
 | [`array-front.stl`](stl/array-front.stl)                       | front of array                                                                                                    | m3x8 (or m3x10)   | 
 | [`array-front-screen.stl`](stl/array-front-screen.stl)         | screen for front of array                                                                                         | none              | 
 | [`array-back.stl`](stl/array-back.stl)                         | back of the array                                                                                                 | m3x8 (or m3x10)   |
-| [`array-latch-9a.stl`](stl/array-latch-9a.stl)                 | side latch (stls for 3, 6, and 12 cart versions also provided)                                                    | m3x8 (or m3x10)   |
-| [`array-latch-9b.stl`](stl/array-latch-9b.stl)                 | side latch (stls for 3, 6, and 12 cart versions also provided)                                                    | m3x8 (or m3x10)   |
-| [`array-bottom-bracket-9.stl`](stl/array-bottom-bracket-9.stl) | bottom bracket (stls for 3, 6, and 12 cart versions also provided)                                                | m3x8 (or m3x10)   |
+| [`array-latch-9a.stl`](stl/array-latch-9a.stl)                 | side latch (stls for 3, 6, 8, and 12 cart versions also provided)                                                 | m3x8 (or m3x10)   |
+| [`array-latch-9b.stl`](stl/array-latch-9b.stl)                 | side latch (stls for 3, 6, 8, and 12 cart versions also provided)                                                 | m3x8 (or m3x10)   |
+| [`array-bottom-bracket-9.stl`](stl/array-bottom-bracket-9.stl) | bottom bracket (stls for 3, 6, 8, and 12 cart versions also provided)                                             | m3x8 (or m3x10)   |
 
 
 ### buffer segments

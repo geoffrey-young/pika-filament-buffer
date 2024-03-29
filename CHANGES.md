@@ -4,6 +4,7 @@
 ## r4 (tbd)
 - reduced heatset holes to 4.6mm diameter
 - add 3 cart latches and bottom (https://github.com/geoffrey-young/pika-filament-buffer/pull/9)
+- add 8 cart latches and bottom for ERCF v2
 
 
 ## r3 (20230804)
